@@ -19,13 +19,13 @@
 		E1D25FCC261EF16C00CE8FC8 /* MainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FCB261EF16C00CE8FC8 /* MainTests.swift */; };
 		E1D25FD1261EF16C00CE8FC8 /* Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FBC261EF16C00CE8FC8 /* Main.framework */; };
 		E1D25FD2261EF16C00CE8FC8 /* Main.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FBC261EF16C00CE8FC8 /* Main.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E1D25FF4261EF1E300CE8FC8 /* Order.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FEB261EF1E300CE8FC8 /* Order.framework */; };
-		E1D25FFB261EF1E300CE8FC8 /* OrderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FFA261EF1E300CE8FC8 /* OrderTests.swift */; };
-		E1D26000261EF1E300CE8FC8 /* Order.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FEB261EF1E300CE8FC8 /* Order.framework */; };
-		E1D26001261EF1E300CE8FC8 /* Order.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FEB261EF1E300CE8FC8 /* Order.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E1D26023261EF30800CE8FC8 /* OrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D26022261EF30800CE8FC8 /* OrderProtocol.swift */; };
-		E1D26030261EF34A00CE8FC8 /* OrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA3261EEBD000CE8FC8 /* OrderInteractor.swift */; };
-		E1D26037261EF34D00CE8FC8 /* OrderRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA9261EECD000CE8FC8 /* OrderRouterProtocol.swift */; };
+		E1D25FF4261EF1E300CE8FC8 /* Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FEB261EF1E300CE8FC8 /* Student.framework */; };
+		E1D25FFB261EF1E300CE8FC8 /* StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FFA261EF1E300CE8FC8 /* StudentTests.swift */; };
+		E1D26000261EF1E300CE8FC8 /* Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FEB261EF1E300CE8FC8 /* Student.framework */; };
+		E1D26001261EF1E300CE8FC8 /* Student.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FEB261EF1E300CE8FC8 /* Student.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1D26023261EF30800CE8FC8 /* StudentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D26022261EF30800CE8FC8 /* StudentProtocol.swift */; };
+		E1D26030261EF34A00CE8FC8 /* StudentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA3261EEBD000CE8FC8 /* StudentInteractor.swift */; };
+		E1D26037261EF34D00CE8FC8 /* StudnetRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA9261EECD000CE8FC8 /* StudnetRouterProtocol.swift */; };
 		E1D26044261EF37E00CE8FC8 /* MainRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF89CD261EE9C10030B37F /* MainRouterProtocol.swift */; };
 		E1D26051261EF38200CE8FC8 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25F9B261EEB5100CE8FC8 /* MainInteractor.swift */; };
 		E1D2605E261EF38500CE8FC8 /* MainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D26014261EF2B500CE8FC8 /* MainProtocol.swift */; };
@@ -33,7 +33,7 @@
 		E1D260A9261EF7A200CE8FC8 /* MainInteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2609B261EF78B00CE8FC8 /* MainInteractorFactory.swift */; };
 		E1D260B2261EFC9C00CE8FC8 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260B0261EFC9C00CE8FC8 /* OrderViewController.swift */; };
 		E1D260B3261EFC9C00CE8FC8 /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D260B1261EFC9C00CE8FC8 /* OrderViewController.xib */; };
-		E1D260BB261F0E2A00CE8FC8 /* OrderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260BA261F0E2A00CE8FC8 /* OrderFactory.swift */; };
+		E1D260BB261F0E2A00CE8FC8 /* StudentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260BA261F0E2A00CE8FC8 /* StudentFactory.swift */; };
 		E1D260C3261F0E9C00CE8FC8 /* OrderViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260C2261F0E9C00CE8FC8 /* OrderViewControllerFactory.swift */; };
 		E1D260E9261F29BB00CE8FC8 /* MainDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260D4261F295A00CE8FC8 /* MainDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -91,7 +91,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				E1D25FD2261EF16C00CE8FC8 /* Main.framework in Embed Frameworks */,
-				E1D26001261EF1E300CE8FC8 /* Order.framework in Embed Frameworks */,
+				E1D26001261EF1E300CE8FC8 /* Student.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,8 +110,8 @@
 		E1C504BF261B56AB00087D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1C504C1261B56AB00087D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RouterPattern/AppSupport/Info.plist; sourceTree = SOURCE_ROOT; };
 		E1D25F9B261EEB5100CE8FC8 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
-		E1D25FA3261EEBD000CE8FC8 /* OrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderInteractor.swift; sourceTree = "<group>"; };
-		E1D25FA9261EECD000CE8FC8 /* OrderRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRouterProtocol.swift; sourceTree = "<group>"; };
+		E1D25FA3261EEBD000CE8FC8 /* StudentInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInteractor.swift; sourceTree = "<group>"; };
+		E1D25FA9261EECD000CE8FC8 /* StudnetRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudnetRouterProtocol.swift; sourceTree = "<group>"; };
 		E1D25FB1261EED5800CE8FC8 /* OrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRouter.swift; sourceTree = "<group>"; };
 		E1D25FBC261EF16C00CE8FC8 /* Main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D25FBE261EF16C00CE8FC8 /* Main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Main.h; sourceTree = "<group>"; };
@@ -119,19 +119,19 @@
 		E1D25FC4261EF16C00CE8FC8 /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D25FCB261EF16C00CE8FC8 /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
 		E1D25FCD261EF16C00CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E1D25FEB261EF1E300CE8FC8 /* Order.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Order.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1D25FED261EF1E300CE8FC8 /* Order.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
-		E1D25FEE261EF1E300CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D25FEB261EF1E300CE8FC8 /* Student.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Student.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D25FED261EF1E300CE8FC8 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		E1D25FEE261EF1E300CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RouterPattern/UseCases/StudentComponent/Student/Info.plist; sourceTree = SOURCE_ROOT; };
 		E1D25FF3261EF1E300CE8FC8 /* OrderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1D25FFA261EF1E300CE8FC8 /* OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTests.swift; sourceTree = "<group>"; };
+		E1D25FFA261EF1E300CE8FC8 /* StudentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTests.swift; sourceTree = "<group>"; };
 		E1D25FFC261EF1E300CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D26014261EF2B500CE8FC8 /* MainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocol.swift; sourceTree = "<group>"; };
-		E1D26022261EF30800CE8FC8 /* OrderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderProtocol.swift; sourceTree = "<group>"; };
+		E1D26022261EF30800CE8FC8 /* StudentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProtocol.swift; sourceTree = "<group>"; };
 		E1D2608D261EF72200CE8FC8 /* MainViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerFactory.swift; sourceTree = "<group>"; };
 		E1D2609B261EF78B00CE8FC8 /* MainInteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorFactory.swift; sourceTree = "<group>"; };
 		E1D260B0261EFC9C00CE8FC8 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		E1D260B1261EFC9C00CE8FC8 /* OrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
-		E1D260BA261F0E2A00CE8FC8 /* OrderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderFactory.swift; sourceTree = "<group>"; };
+		E1D260BA261F0E2A00CE8FC8 /* StudentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentFactory.swift; sourceTree = "<group>"; };
 		E1D260C2261F0E9C00CE8FC8 /* OrderViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewControllerFactory.swift; sourceTree = "<group>"; };
 		E1D260D4261F295A00CE8FC8 /* MainDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D25FD1261EF16C00CE8FC8 /* Main.framework in Frameworks */,
-				E1D26000261EF1E300CE8FC8 /* Order.framework in Frameworks */,
+				E1D26000261EF1E300CE8FC8 /* Student.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,7 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1D25FF4261EF1E300CE8FC8 /* Order.framework in Frameworks */,
+				E1D25FF4261EF1E300CE8FC8 /* Student.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,20 +188,20 @@
 			path = MainComponent;
 			sourceTree = "<group>";
 		};
-		E175903C2641A80C004C9AA0 /* OrderComponent */ = {
+		E175903C2641A80C004C9AA0 /* StudentComponent */ = {
 			isa = PBXGroup;
 			children = (
-				E1AF89C4261EE98B0030B37F /* Order */,
-				E1D25FF9261EF1E300CE8FC8 /* OrderTests */,
+				E1AF89C4261EE98B0030B37F /* Student */,
+				E1D25FF9261EF1E300CE8FC8 /* StudentTests */,
 			);
-			path = OrderComponent;
+			path = StudentComponent;
 			sourceTree = "<group>";
 		};
 		E1AF89C2261EE9720030B37F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
 				E175903B2641A7FE004C9AA0 /* MainComponent */,
-				E175903C2641A80C004C9AA0 /* OrderComponent */,
+				E175903C2641A80C004C9AA0 /* StudentComponent */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -220,17 +220,17 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		E1AF89C4261EE98B0030B37F /* Order */ = {
+		E1AF89C4261EE98B0030B37F /* Student */ = {
 			isa = PBXGroup;
 			children = (
-				E1D25FED261EF1E300CE8FC8 /* Order.h */,
+				E1D25FED261EF1E300CE8FC8 /* Student.h */,
 				E1D25FEE261EF1E300CE8FC8 /* Info.plist */,
-				E1D26022261EF30800CE8FC8 /* OrderProtocol.swift */,
-				E1D25FA3261EEBD000CE8FC8 /* OrderInteractor.swift */,
+				E1D26022261EF30800CE8FC8 /* StudentProtocol.swift */,
+				E1D25FA3261EEBD000CE8FC8 /* StudentInteractor.swift */,
 				E1D260FD261F4AEC00CE8FC8 /* Factory */,
-				E1D25FA8261EEC0100CE8FC8 /* OrderRouter */,
+				E1D25FA8261EEC0100CE8FC8 /* StudentRouter */,
 			);
-			path = Order;
+			path = Student;
 			sourceTree = "<group>";
 		};
 		E1AF89D2261EE9D30030B37F /* MainRouter */ = {
@@ -255,7 +255,7 @@
 				E1C504B0261B56A700087D61 /* RouterPattern.app */,
 				E1D25FBC261EF16C00CE8FC8 /* Main.framework */,
 				E1D25FC4261EF16C00CE8FC8 /* MainTests.xctest */,
-				E1D25FEB261EF1E300CE8FC8 /* Order.framework */,
+				E1D25FEB261EF1E300CE8FC8 /* Student.framework */,
 				E1D25FF3261EF1E300CE8FC8 /* OrderTests.xctest */,
 			);
 			name = Products;
@@ -271,12 +271,12 @@
 			path = RouterPattern;
 			sourceTree = "<group>";
 		};
-		E1D25FA8261EEC0100CE8FC8 /* OrderRouter */ = {
+		E1D25FA8261EEC0100CE8FC8 /* StudentRouter */ = {
 			isa = PBXGroup;
 			children = (
-				E1D25FA9261EECD000CE8FC8 /* OrderRouterProtocol.swift */,
+				E1D25FA9261EECD000CE8FC8 /* StudnetRouterProtocol.swift */,
 			);
-			path = OrderRouter;
+			path = StudentRouter;
 			sourceTree = "<group>";
 		};
 		E1D25FCA261EF16C00CE8FC8 /* MainTests */ = {
@@ -288,13 +288,13 @@
 			path = MainTests;
 			sourceTree = "<group>";
 		};
-		E1D25FF9261EF1E300CE8FC8 /* OrderTests */ = {
+		E1D25FF9261EF1E300CE8FC8 /* StudentTests */ = {
 			isa = PBXGroup;
 			children = (
-				E1D25FFA261EF1E300CE8FC8 /* OrderTests.swift */,
+				E1D25FFA261EF1E300CE8FC8 /* StudentTests.swift */,
 				E1D25FFC261EF1E300CE8FC8 /* Info.plist */,
 			);
-			path = OrderTests;
+			path = StudentTests;
 			sourceTree = "<group>";
 		};
 		E1D26077261EF5B200CE8FC8 /* AppSupport */ = {
@@ -350,7 +350,7 @@
 		E1D260FD261F4AEC00CE8FC8 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				E1D260BA261F0E2A00CE8FC8 /* OrderFactory.swift */,
+				E1D260BA261F0E2A00CE8FC8 /* StudentFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -481,9 +481,9 @@
 			productReference = E1D25FC4261EF16C00CE8FC8 /* MainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E1D25FEA261EF1E300CE8FC8 /* Order */ = {
+		E1D25FEA261EF1E300CE8FC8 /* Student */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1D26002261EF1E300CE8FC8 /* Build configuration list for PBXNativeTarget "Order" */;
+			buildConfigurationList = E1D26002261EF1E300CE8FC8 /* Build configuration list for PBXNativeTarget "Student" */;
 			buildPhases = (
 				E1D25FE6261EF1E300CE8FC8 /* Headers */,
 				E1D25FE7261EF1E300CE8FC8 /* Sources */,
@@ -494,9 +494,9 @@
 			);
 			dependencies = (
 			);
-			name = Order;
+			name = Student;
 			productName = Order;
-			productReference = E1D25FEB261EF1E300CE8FC8 /* Order.framework */;
+			productReference = E1D25FEB261EF1E300CE8FC8 /* Student.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E1D25FF2261EF1E300CE8FC8 /* OrderTests */ = {
@@ -563,7 +563,7 @@
 				E1C504AF261B56A700087D61 /* RouterPattern */,
 				E1D25FBB261EF16C00CE8FC8 /* Main */,
 				E1D25FC3261EF16C00CE8FC8 /* MainTests */,
-				E1D25FEA261EF1E300CE8FC8 /* Order */,
+				E1D25FEA261EF1E300CE8FC8 /* Student */,
 				E1D25FF2261EF1E300CE8FC8 /* OrderTests */,
 			);
 		};
@@ -651,10 +651,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1D26037261EF34D00CE8FC8 /* OrderRouterProtocol.swift in Sources */,
-				E1D260BB261F0E2A00CE8FC8 /* OrderFactory.swift in Sources */,
-				E1D26023261EF30800CE8FC8 /* OrderProtocol.swift in Sources */,
-				E1D26030261EF34A00CE8FC8 /* OrderInteractor.swift in Sources */,
+				E1D26037261EF34D00CE8FC8 /* StudnetRouterProtocol.swift in Sources */,
+				E1D260BB261F0E2A00CE8FC8 /* StudentFactory.swift in Sources */,
+				E1D26023261EF30800CE8FC8 /* StudentProtocol.swift in Sources */,
+				E1D26030261EF34A00CE8FC8 /* StudentInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,7 +662,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1D25FFB261EF1E300CE8FC8 /* OrderTests.swift in Sources */,
+				E1D25FFB261EF1E300CE8FC8 /* StudentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -686,7 +686,7 @@
 		};
 		E1D25FF6261EF1E300CE8FC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1D25FEA261EF1E300CE8FC8 /* Order */;
+			target = E1D25FEA261EF1E300CE8FC8 /* Student */;
 			targetProxy = E1D25FF5261EF1E300CE8FC8 /* PBXContainerItemProxy */;
 		};
 		E1D25FF8261EF1E300CE8FC8 /* PBXTargetDependency */ = {
@@ -696,7 +696,7 @@
 		};
 		E1D25FFF261EF1E300CE8FC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E1D25FEA261EF1E300CE8FC8 /* Order */;
+			target = E1D25FEA261EF1E300CE8FC8 /* Student */;
 			targetProxy = E1D25FFE261EF1E300CE8FC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -974,7 +974,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RouterPattern/UseCases/OrderComponent/Order/Info.plist;
+				INFOPLIST_FILE = RouterPattern/UseCases/StudentComponent/Student/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1003,7 +1003,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RouterPattern/UseCases/OrderComponent/Order/Info.plist;
+				INFOPLIST_FILE = RouterPattern/UseCases/StudentComponent/Student/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1099,7 +1099,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1D26002261EF1E300CE8FC8 /* Build configuration list for PBXNativeTarget "Order" */ = {
+		E1D26002261EF1E300CE8FC8 /* Build configuration list for PBXNativeTarget "Student" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1D26003261EF1E300CE8FC8 /* Debug */,

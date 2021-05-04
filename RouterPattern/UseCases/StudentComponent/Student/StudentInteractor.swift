@@ -15,7 +15,7 @@ class OrderInteractor: OrderProtocol {
 		self.router = coordinator
 	}
 	
-	func analyzeOrder(message: String, completion: ((Result<String, Error>) -> Void)?) {
+	func placeOrder(message: String, completion: ((Result<String, Error>) -> Void)?) {
 		completion?(Result.success(message))
 		router.dismiss()
 	}

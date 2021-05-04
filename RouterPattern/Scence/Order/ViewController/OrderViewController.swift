@@ -40,6 +40,6 @@ class OrderViewController: UIViewController {
 	
 	@IBAction func doneButtonDidTap(_ sender: UIButton) {
 		let dataString = self.text + (textField.text ?? "NA")
-		interactor.analyzeOrder(message: dataString, completion: completion)
+		interactor.placeOrder(message: dataString, completion: completion)
 	}
 }

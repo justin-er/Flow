@@ -17,7 +17,7 @@ class MainInteractor: MainProtocol {
 	}
 	
 	func order(name: String) {
-		router.order(message: name) {[weak self] (result) in
+		router.edit(student: name) {[weak self] (result) in
 			switch result {
 			case .failure(let error):
 				print(error.localizedDescription)

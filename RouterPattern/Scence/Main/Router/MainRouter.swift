@@ -12,9 +12,9 @@ class MainRouter: MainRouterProtocol {
 	
 	weak var viewController: UIViewController?
 	
-	func order(message: String, completion: @escaping (Result<String, Error>) -> Void) {
+	func edit(student: String, completion: @escaping (Result<String, Error>) -> Void) {
 		let orderViewController = OrderViewControllerFactory.build()
-		orderViewController.text = message
+		orderViewController.text = student
 		orderViewController.completion = completion
 		
 		viewController?.show(orderViewController, sender: self)

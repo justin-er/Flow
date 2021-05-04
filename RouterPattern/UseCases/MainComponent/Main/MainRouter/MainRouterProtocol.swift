@@ -9,5 +9,5 @@ import Foundation
 
 public protocol MainRouterProtocol {
 	
-	func order(message: String, completion: @escaping (Result<String, Error>) -> Void)
+	func edit(student: String, completion: @escaping (Result<String, Error>) -> Void)
 }

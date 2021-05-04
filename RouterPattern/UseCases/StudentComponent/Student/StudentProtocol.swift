@@ -9,5 +9,5 @@ import Foundation
 
 public protocol OrderProtocol {
 	 
-	func analyzeOrder(message: String, completion: ((Result<String, Error>) -> Void)?)
+	func placeOrder(message: String, completion: ((Result<String, Error>) -> Void)?)
 }
