@@ -7,11 +7,11 @@
 
 import Foundation
 
-class OrderInteractor: OrderProtocol {
+class StudentInteractor: StudentProtocol {
 	
-	let router: OrderRouterProtocol
+	let router: StudentRouterProtocol
 	
-	init(coordinator: OrderRouterProtocol) {
+	init(coordinator: StudentRouterProtocol) {
 		self.router = coordinator
 	}
 	

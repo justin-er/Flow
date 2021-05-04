@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol OrderProtocol {
+public protocol StudentProtocol {
 	 
 	func placeOrder(message: String, completion: ((Result<String, Error>) -> Void)?)
 }

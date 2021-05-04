@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol OrderRouterProtocol {
+public protocol StudentRouterProtocol {
 	
 	func login(completion: @escaping (Bool) -> Void)
 	func dismiss()

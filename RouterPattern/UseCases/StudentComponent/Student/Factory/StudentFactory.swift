@@ -7,9 +7,9 @@
 
 import Foundation
 
-public class OrderFactory {
+public class StudentFactory {
 	
-	public static func build(coordinator: OrderRouterProtocol) -> OrderProtocol {
-		OrderInteractor(coordinator: coordinator)
+	public static func build(coordinator: StudentRouterProtocol) -> StudentProtocol {
+		StudentInteractor(coordinator: coordinator)
 	}
 }
