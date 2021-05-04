@@ -7,16 +7,33 @@
 
 import Foundation
 
-class StudentInteractor: StudentProtocol {
+class StudentInteractor: StudentInteractorProtocol {
+	
+	var editingStudent: String?
 	
 	let router: StudentRouterProtocol
+	weak var delegate: StudentInteractorDelegate?
+	weak var serviceDelegate: StudentInteracatorServiceDelegate?
 	
 	init(coordinator: StudentRouterProtocol) {
 		self.router = coordinator
 	}
 	
-	func placeOrder(message: String, completion: ((Result<String, Error>) -> Void)?) {
-		completion?(Result.success(message))
-		router.dismiss()
+	func student() {
+		delegate?.edit(student: self.editingStudent)
+	}
+	
+	func apply(student: String) {
+		serviceDelegate?.interactorDidModify(student: student)
 	}
 }
+
+extension StudentInteractor: StudentInteractorService {
+	
+	func edit(student: String) {
+		self.editingStudent = student
+	}
+	
+}
+
+

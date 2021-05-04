@@ -9,7 +9,7 @@ import Foundation
 
 public class StudentFactory {
 	
-	public static func build(coordinator: StudentRouterProtocol) -> StudentProtocol {
+	public static func build(coordinator: StudentRouterProtocol) -> StudentInteractorProtocol {
 		StudentInteractor(coordinator: coordinator)
 	}
 }

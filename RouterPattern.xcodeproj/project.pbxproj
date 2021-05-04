@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E17590442641AF72004C9AA0 /* StudentInteractorServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17590412641AED6004C9AA0 /* StudentInteractorServiceDelegate.swift */; };
+		E17590472641AF78004C9AA0 /* StudentInteractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175903D2641AE7F004C9AA0 /* StudentInteractorService.swift */; };
+		E17590482641AF78004C9AA0 /* StudentInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175903F2641AEC7004C9AA0 /* StudentInteractorDelegate.swift */; };
 		E18B3A1C261E2AF30099AE65 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B3A1B261E2AF30099AE65 /* AppRouter.swift */; };
 		E1AF89D4261EE9E70030B37F /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF89D3261EE9E70030B37F /* MainRouter.swift */; };
 		E1C504B4261B56A700087D61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C504B3261B56A700087D61 /* AppDelegate.swift */; };
@@ -23,7 +26,7 @@
 		E1D25FFB261EF1E300CE8FC8 /* StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FFA261EF1E300CE8FC8 /* StudentTests.swift */; };
 		E1D26000261EF1E300CE8FC8 /* Student.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FEB261EF1E300CE8FC8 /* Student.framework */; };
 		E1D26001261EF1E300CE8FC8 /* Student.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E1D25FEB261EF1E300CE8FC8 /* Student.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E1D26023261EF30800CE8FC8 /* StudentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D26022261EF30800CE8FC8 /* StudentProtocol.swift */; };
+		E1D26023261EF30800CE8FC8 /* StudentInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D26022261EF30800CE8FC8 /* StudentInteractorProtocol.swift */; };
 		E1D26030261EF34A00CE8FC8 /* StudentInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA3261EEBD000CE8FC8 /* StudentInteractor.swift */; };
 		E1D26037261EF34D00CE8FC8 /* StudnetRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA9261EECD000CE8FC8 /* StudnetRouterProtocol.swift */; };
 		E1D26044261EF37E00CE8FC8 /* MainRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF89CD261EE9C10030B37F /* MainRouterProtocol.swift */; };
@@ -99,6 +102,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E175903D2641AE7F004C9AA0 /* StudentInteractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInteractorService.swift; sourceTree = "<group>"; };
+		E175903F2641AEC7004C9AA0 /* StudentInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInteractorDelegate.swift; sourceTree = "<group>"; };
+		E17590412641AED6004C9AA0 /* StudentInteractorServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInteractorServiceDelegate.swift; sourceTree = "<group>"; };
 		E18B3A1B261E2AF30099AE65 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		E1AF89CD261EE9C10030B37F /* MainRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterProtocol.swift; sourceTree = "<group>"; };
 		E1AF89D3261EE9E70030B37F /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
@@ -126,7 +132,7 @@
 		E1D25FFA261EF1E300CE8FC8 /* StudentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTests.swift; sourceTree = "<group>"; };
 		E1D25FFC261EF1E300CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D26014261EF2B500CE8FC8 /* MainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainProtocol.swift; sourceTree = "<group>"; };
-		E1D26022261EF30800CE8FC8 /* StudentProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentProtocol.swift; sourceTree = "<group>"; };
+		E1D26022261EF30800CE8FC8 /* StudentInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInteractorProtocol.swift; sourceTree = "<group>"; };
 		E1D2608D261EF72200CE8FC8 /* MainViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerFactory.swift; sourceTree = "<group>"; };
 		E1D2609B261EF78B00CE8FC8 /* MainInteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorFactory.swift; sourceTree = "<group>"; };
 		E1D260B0261EFC9C00CE8FC8 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
@@ -225,8 +231,11 @@
 			children = (
 				E1D25FED261EF1E300CE8FC8 /* Student.h */,
 				E1D25FEE261EF1E300CE8FC8 /* Info.plist */,
-				E1D26022261EF30800CE8FC8 /* StudentProtocol.swift */,
+				E1D26022261EF30800CE8FC8 /* StudentInteractorProtocol.swift */,
+				E175903D2641AE7F004C9AA0 /* StudentInteractorService.swift */,
 				E1D25FA3261EEBD000CE8FC8 /* StudentInteractor.swift */,
+				E175903F2641AEC7004C9AA0 /* StudentInteractorDelegate.swift */,
+				E17590412641AED6004C9AA0 /* StudentInteractorServiceDelegate.swift */,
 				E1D260FD261F4AEC00CE8FC8 /* Factory */,
 				E1D25FA8261EEC0100CE8FC8 /* StudentRouter */,
 			);
@@ -652,9 +661,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1D26037261EF34D00CE8FC8 /* StudnetRouterProtocol.swift in Sources */,
+				E17590442641AF72004C9AA0 /* StudentInteractorServiceDelegate.swift in Sources */,
+				E17590472641AF78004C9AA0 /* StudentInteractorService.swift in Sources */,
 				E1D260BB261F0E2A00CE8FC8 /* StudentFactory.swift in Sources */,
-				E1D26023261EF30800CE8FC8 /* StudentProtocol.swift in Sources */,
+				E1D26023261EF30800CE8FC8 /* StudentInteractorProtocol.swift in Sources */,
 				E1D26030261EF34A00CE8FC8 /* StudentInteractor.swift in Sources */,
+				E17590482641AF78004C9AA0 /* StudentInteractorDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
