@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppCoordinator {
+class AppRouter {
 	let window: UIWindow?
 	
 	init(window: UIWindow?) {

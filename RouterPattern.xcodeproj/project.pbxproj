@@ -115,13 +115,13 @@
 		E1D25FB1261EED5800CE8FC8 /* OrderRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRouter.swift; sourceTree = "<group>"; };
 		E1D25FBC261EF16C00CE8FC8 /* Main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D25FBE261EF16C00CE8FC8 /* Main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Main.h; sourceTree = "<group>"; };
-		E1D25FBF261EF16C00CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RouterPattern/UseCases/Main/Info.plist; sourceTree = SOURCE_ROOT; };
+		E1D25FBF261EF16C00CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D25FC4261EF16C00CE8FC8 /* MainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D25FCB261EF16C00CE8FC8 /* MainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTests.swift; sourceTree = "<group>"; };
 		E1D25FCD261EF16C00CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D25FEB261EF1E300CE8FC8 /* Order.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Order.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D25FED261EF1E300CE8FC8 /* Order.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
-		E1D25FEE261EF1E300CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RouterPattern/UseCases/Order/Info.plist; sourceTree = SOURCE_ROOT; };
+		E1D25FEE261EF1E300CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1D25FF3261EF1E300CE8FC8 /* OrderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D25FFA261EF1E300CE8FC8 /* OrderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTests.swift; sourceTree = "<group>"; };
 		E1D25FFC261EF1E300CE8FC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -179,13 +179,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E1AF89C2261EE9720030B37F /* UseCases */ = {
+		E175903B2641A7FE004C9AA0 /* MainComponent */ = {
 			isa = PBXGroup;
 			children = (
 				E1AF89C3261EE9840030B37F /* Main */,
 				E1D25FCA261EF16C00CE8FC8 /* MainTests */,
+			);
+			path = MainComponent;
+			sourceTree = "<group>";
+		};
+		E175903C2641A80C004C9AA0 /* OrderComponent */ = {
+			isa = PBXGroup;
+			children = (
 				E1AF89C4261EE98B0030B37F /* Order */,
 				E1D25FF9261EF1E300CE8FC8 /* OrderTests */,
+			);
+			path = OrderComponent;
+			sourceTree = "<group>";
+		};
+		E1AF89C2261EE9720030B37F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				E175903B2641A7FE004C9AA0 /* MainComponent */,
+				E175903C2641A80C004C9AA0 /* OrderComponent */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -863,7 +879,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RouterPattern/UseCases/Main/Info.plist;
+				INFOPLIST_FILE = RouterPattern/UseCases/MainComponent/Main/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -890,7 +906,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RouterPattern/UseCases/Main/Info.plist;
+				INFOPLIST_FILE = RouterPattern/UseCases/MainComponent/Main/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -958,7 +974,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RouterPattern/UseCases/Order/Info.plist;
+				INFOPLIST_FILE = RouterPattern/UseCases/OrderComponent/Order/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -987,7 +1003,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RouterPattern/UseCases/Order/Info.plist;
+				INFOPLIST_FILE = RouterPattern/UseCases/OrderComponent/Order/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
