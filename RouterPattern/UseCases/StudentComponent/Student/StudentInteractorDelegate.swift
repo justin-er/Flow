@@ -9,5 +9,5 @@ import Foundation
 
 public protocol StudentInteractorDelegate: AnyObject {
 	
-	func edit(student: String?)
+	func interactoDidLoad(student: String?)
 }

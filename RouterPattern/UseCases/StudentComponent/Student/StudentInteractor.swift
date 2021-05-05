@@ -19,8 +19,8 @@ class StudentInteractor: StudentInteractorProtocol {
 		self.router = coordinator
 	}
 	
-	func student() {
-		delegate?.edit(student: self.editingStudent)
+	func loadStudent() {
+		delegate?.interactoDidLoad(student: self.editingStudent)
 	}
 	
 	func apply(student: String) {

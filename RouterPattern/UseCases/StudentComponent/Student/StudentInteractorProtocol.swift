@@ -9,6 +9,6 @@ import Foundation
 
 public protocol StudentInteractorProtocol {
 	
-	func student()
+	func loadStudent()
 	func apply(student: String)
 }
