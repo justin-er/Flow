@@ -13,11 +13,13 @@ class MainViewControllerFactory {
 	func build() -> MainViewController {
 		let coordinator = MainRouter()
 		var interactor = MainInteractorFactory.build(coordinator: coordinator)
+		var presenter = MainPresenter(interactor: interactor)
 		
-		let viewController = MainViewController(interactor: interactor)
+		let viewController = MainViewController(presenter: presenter)
 		
 		coordinator.viewController = viewController
-		interactor.delegate = viewController
+		presenter.delegate = viewController
+		interactor.delegate = presenter
 		
 		return viewController
 	}

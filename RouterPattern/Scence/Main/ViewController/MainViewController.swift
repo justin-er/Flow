@@ -10,14 +10,13 @@ import Main
 
 class MainViewController: UIViewController {
 	
-	var interactor: MainProtocol
+	let cellReuseIdentifier = "CellReuseIdentifier"
 	
-	let textField = UITextField()
-	let orderButton = UIButton()
-	let resultLabel = UILabel()
-	
-	init(interactor: MainProtocol) {
-		self.interactor = interactor
+	var presenter: MainPresenterProtocol
+	let tableView = UITableView()
+		
+	init(presenter: MainPresenterProtocol) {
+		self.presenter = presenter
 		super.init(nibName: nil, bundle: nil)
 	}
 	
@@ -28,69 +27,65 @@ class MainViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		configViewController()
-		configTextField()
-		configOrderButton()
-		configResultLable()
+		configTableView()
+	}
+	
+	override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		presenter.loadStudents()
 	}
 	
 	func configViewController() {
 		view.backgroundColor = .systemBackground
 	}
 	
-	func configTextField() {
-		textField.borderStyle = .roundedRect
-		textField.minimumFontSize = 17
+	func configTableView() {
 		
-		textField.translatesAutoresizingMaskIntoConstraints = false
-		view.addSubview(textField)
-		
+		view.addSubview(tableView)
+		tableView.translatesAutoresizingMaskIntoConstraints = false
+		tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+		tableView.dataSource = self
+		tableView.delegate = self
 		NSLayoutConstraint.activate([
-			textField.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
-			textField.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-			textField.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20),
-			textField.heightAnchor.constraint(equalToConstant: 32)
+			tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+			tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+			tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+			tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
 		])
 	}
 	
-	func configOrderButton() {
-		orderButton.setTitle("Order", for: .normal)
-		orderButton.setTitleColor(.systemBlue, for: .normal)
-		orderButton.addTarget(self, action: #selector(orderButtonDidTap(button:)), for: .touchUpInside)
-		view.addSubview(orderButton)
-		orderButton.translatesAutoresizingMaskIntoConstraints = false
-		
-		NSLayoutConstraint.activate([
-			orderButton.topAnchor.constraint(equalTo: textField.bottomAnchor, constant: 20),
-			orderButton.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-			orderButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
-		])
-	}
+}
+
+extension MainViewController: MainPresenterDelegate {
 	
-	@objc
-	func orderButtonDidTap(button: UIButton) {
-		interactor.order(name: textField.text ?? "No entry")
-	}
-	
-	func configResultLable() {
-		resultLabel.textColor = .black
-		resultLabel.textAlignment = .center
-		
-		view.addSubview(resultLabel)
-		resultLabel.translatesAutoresizingMaskIntoConstraints = false
-		
-		NSLayoutConstraint.activate([
-			resultLabel.topAnchor.constraint(equalTo: orderButton.bottomAnchor, constant: 50),
-			resultLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 0),
-			resultLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: 0),
-			resultLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-		])
+	func mainPresenterDidLoad() {
+		tableView.reloadData()
 	}
 }
 
-extension MainViewController: MainDelegate {
+extension MainViewController: UITableViewDelegate {
 	
-	func interactorDidProcessOrder(result: String) {
-		resultLabel.text = result
+}
+
+extension MainViewController: UITableViewDataSource {
+		
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+		presenter.numberOfRowsIn(section: section)
+	}
+	
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		guard let studentViewModel = presenter.studentForRowAt(indexPath: indexPath) else {
+			return UITableViewCell()
+		}
+		
+		guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) else {
+			return UITableViewCell()
+		}
+		
+		cell.accessoryType = .disclosureIndicator
+		cell.textLabel?.text = studentViewModel.name
+		
+		return cell
 	}
 	
 }

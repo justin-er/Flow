@@ -9,14 +9,28 @@ import UIKit
 import Main
 
 class MainRouter: MainRouterProtocol {
-	
+
 	weak var viewController: UIViewController?
+	var completion: ((Student) -> Void)?
 	
-	func edit(student: String, completion: @escaping (Result<String, Error>) -> Void) {
-		let orderViewController = OrderViewControllerFactory.build()
-		orderViewController.text = student
-		orderViewController.completion = completion
+	func edit(student: Student, completion: @escaping (Student) -> Void) {
+		self.completion = completion
+		var (studentEditor, studentViewController) = StudentEditorViewControllerFactory.build()
+		studentEditor.serviceDelegate = self
+		studentEditor.edit(student: student)
+		viewController?.show(studentViewController, sender: self)
+		self.completion = completion
+	}
+}
+
+extension MainRouter: StudentEditorServiceDelegate {
+	
+	func studentEditorServiceDidModify(student: Student) {
 		
-		viewController?.show(orderViewController, sender: self)
+		completion?(student)
+		
+		guard let vc = self.viewController else { return }
+		viewController?.navigationController?.popToViewController(vc, animated: true)
+
 	}
 }
