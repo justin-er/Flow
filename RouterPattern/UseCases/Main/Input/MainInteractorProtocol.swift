@@ -12,4 +12,5 @@ public protocol MainInteractorProtocol {
 	var delegate: MainInteractorDelegate? { get set }
 	
 	func load()
+	func editStudent(id: Int)
 }

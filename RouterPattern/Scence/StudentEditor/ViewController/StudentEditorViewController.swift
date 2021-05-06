@@ -36,7 +36,8 @@ class StudentEditorViewController: UIViewController {
 	
 	@IBAction func doneButtonDidTap(_ sender: UIButton) {
 		guard let student = student else { return }
-		presenter.applyChanges(student: student)
+		let modifiedStudent = StudentViewModel(id: student.id, name: textField.text ?? "")
+		presenter.applyChanges(student: modifiedStudent)
 	}
 }
 
@@ -44,5 +45,6 @@ extension StudentEditorViewController: StudentEditorPresenterDelegate {
 	
 	func studentEditorPresenterDidLoad(student: StudentViewModel) {
 		self.student = student
+		textField.text = student.name
 	}
 }

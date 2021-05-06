@@ -15,6 +15,8 @@ class MainViewController: UIViewController {
 	var presenter: MainPresenterProtocol
 	let tableView = UITableView()
 		
+	var updatedIndexPaths = [IndexPath]()
+	
 	init(presenter: MainPresenterProtocol) {
 		self.presenter = presenter
 		super.init(nibName: nil, bundle: nil)
@@ -28,11 +30,20 @@ class MainViewController: UIViewController {
 		super.viewDidLoad()
 		configViewController()
 		configTableView()
+		presenter.loadStudents()
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		presenter.loadStudents()
+	}
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		
+		if updatedIndexPaths.count > 0 {
+			tableView.reloadRows(at: updatedIndexPaths, with: .automatic)
+			updatedIndexPaths.removeAll()
+		}
 	}
 	
 	func configViewController() {
@@ -43,7 +54,7 @@ class MainViewController: UIViewController {
 		
 		view.addSubview(tableView)
 		tableView.translatesAutoresizingMaskIntoConstraints = false
-		tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+		tableView.register(StudentTableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
 		tableView.dataSource = self
 		tableView.delegate = self
 		NSLayoutConstraint.activate([
@@ -53,7 +64,6 @@ class MainViewController: UIViewController {
 			tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
 		])
 	}
-	
 }
 
 extension MainViewController: MainPresenterDelegate {
@@ -61,10 +71,18 @@ extension MainViewController: MainPresenterDelegate {
 	func mainPresenterDidLoad() {
 		tableView.reloadData()
 	}
+	
+	func mainPresenterDidUpdate(at indexPath: IndexPath) {
+		updatedIndexPaths.append(indexPath)
+	}
 }
 
 extension MainViewController: UITableViewDelegate {
-	
+
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		guard let cell = tableView.cellForRow(at: indexPath) as? StudentTableViewCell else { return }
+		presenter.edit(student: cell.id)
+	}
 }
 
 extension MainViewController: UITableViewDataSource {
@@ -78,11 +96,12 @@ extension MainViewController: UITableViewDataSource {
 			return UITableViewCell()
 		}
 		
-		guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) else {
+		guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? StudentTableViewCell else {
 			return UITableViewCell()
 		}
 		
 		cell.accessoryType = .disclosureIndicator
+		cell.id = studentViewModel.id
 		cell.textLabel?.text = studentViewModel.name
 		
 		return cell

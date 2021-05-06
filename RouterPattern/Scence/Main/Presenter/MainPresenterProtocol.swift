@@ -14,4 +14,6 @@ protocol MainPresenterProtocol {
 	func loadStudents()
 	func numberOfRowsIn(section: Int) -> Int
 	func studentForRowAt(indexPath: IndexPath) -> StudentViewModel?
+	
+	func edit(student id: Int)
 }

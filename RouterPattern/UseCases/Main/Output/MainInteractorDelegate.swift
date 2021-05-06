@@ -10,4 +10,5 @@ import Foundation
 public protocol MainInteractorDelegate: AnyObject {
 	
 	func mainInteractorDidLoad(students: [Student])
+	func mainInteractorDidUpdate(studnet: Student)
 }

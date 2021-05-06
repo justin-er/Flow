@@ -29,4 +29,20 @@ class MainInteractor: MainInteractorProtocol {
 	func load() {
 		delegate?.mainInteractorDidLoad(students: dataSource)
 	}
+	
+	func editStudent(id: Int) {
+		guard let student = dataSource.first(where: { student in
+			student.id == id
+		}) else { return }
+		router.edit(student: student) {[weak self] student in
+			guard let self = self else { return }
+			for (i, item) in self.dataSource.enumerated() {
+				if item.id == id {
+					self.dataSource[i] = student
+					self.delegate?.mainInteractorDidUpdate(studnet: student)
+					break
+				}
+			}
+		}
+	}
 }

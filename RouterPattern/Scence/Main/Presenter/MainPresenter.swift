@@ -30,6 +30,9 @@ class MainPresenter: MainPresenterProtocol {
 		return dataSource[indexPath.row]
 	}
 	
+	func edit(student id: Int) {
+		interactor.editStudent(id: id)
+	}
 }
 
 extension MainPresenter: MainInteractorDelegate {
@@ -41,6 +44,15 @@ extension MainPresenter: MainInteractorDelegate {
 		})
 		
 		delegate?.mainPresenterDidLoad()
+	}
+
+	func mainInteractorDidUpdate(studnet: Student) {
+		for (i, item) in dataSource.enumerated() {
+			if item.id == studnet.id {
+				dataSource[i] = StudentViewModel(id: studnet.id, name: studnet.name)
+				delegate?.mainPresenterDidUpdate(at: IndexPath(row: i, section: 0))
+			}
+		}
 	}
 
 }

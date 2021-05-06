@@ -22,6 +22,7 @@
 		E162DC05264429AB0080EC78 /* StudentEditorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260BA261F0E2A00CE8FC8 /* StudentEditorFactory.swift */; };
 		E162DC06264429AE0080EC78 /* StudnetRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA9261EECD000CE8FC8 /* StudnetRouterProtocol.swift */; };
 		E162DC0826442DA10080EC78 /* StudentEditorPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162DC0726442DA10080EC78 /* StudentEditorPresenterProtocol.swift */; };
+		E162DC0A264456E50080EC78 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162DC09264456E50080EC78 /* StudentTableViewCell.swift */; };
 		E170BD612642E7EF00AA2A43 /* StudentEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD602642E7EF00AA2A43 /* StudentEditorPresenter.swift */; };
 		E170BD642642E88B00AA2A43 /* StudentEditorPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD632642E88B00AA2A43 /* StudentEditorPresenterDelegate.swift */; };
 		E170BD732642FC6500AA2A43 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD722642FC6500AA2A43 /* MainPresenter.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		E162DC0726442DA10080EC78 /* StudentEditorPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorPresenterProtocol.swift; sourceTree = "<group>"; };
+		E162DC09264456E50080EC78 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		E170BD5B2642E3CA00AA2A43 /* StudentEditorFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorFacade.swift; sourceTree = "<group>"; };
 		E170BD602642E7EF00AA2A43 /* StudentEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorPresenter.swift; sourceTree = "<group>"; };
 		E170BD632642E88B00AA2A43 /* StudentEditorPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorPresenterDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E162DC0B264456EA0080EC78 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E162DC09264456E50080EC78 /* StudentTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		E170BD5E2642E5A800AA2A43 /* Input */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				E1D26115261F650100CE8FC8 /* ViewController */,
+				E162DC0B264456EA0080EC78 /* TableViewCell */,
 				E1D260FE261F4CB900CE8FC8 /* Router */,
 				E1D260FF261F4CC200CE8FC8 /* Factory */,
 				E170BD742642FC6A00AA2A43 /* Presenter */,
@@ -441,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C504B8261B56A700087D61 /* MainViewController.swift in Sources */,
+				E162DC0A264456E50080EC78 /* StudentTableViewCell.swift in Sources */,
 				E162DC03264429A90080EC78 /* StudentEditorInteracgtorDelegate.swift in Sources */,
 				E1D25FB2261EED5800CE8FC8 /* StudentRouter.swift in Sources */,
 				E162DBFA264428E00080EC78 /* MainInteractorFactory.swift in Sources */,

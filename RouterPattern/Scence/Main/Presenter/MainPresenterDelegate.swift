@@ -10,4 +10,5 @@ import Foundation
 protocol MainPresenterDelegate: AnyObject {
 	
 	func mainPresenterDidLoad()
+	func mainPresenterDidUpdate(at indexPath: IndexPath)
 }
