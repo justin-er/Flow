@@ -10,4 +10,5 @@ import Foundation
 struct StudentViewModel {
 	let id: Int
 	let name: String
+	let age: Int
 }

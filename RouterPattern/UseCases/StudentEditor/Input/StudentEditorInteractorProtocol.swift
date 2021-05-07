@@ -7,10 +7,11 @@
 
 import Foundation
 
-public protocol StudentEditorInteractor {
+public protocol StudentEditorInteractorProtocol {
 	
 	var interactorDelegate: StudentEditorInteracgtorDelegate? { get set }
 	
 	func loadStudent()
 	func applyChanges(student: Student)
+	func edit(studentAge: Int)
 }

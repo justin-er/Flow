@@ -9,6 +9,5 @@ import Foundation
 
 public protocol StudentEditorRouterProtocol {
 	
-	func login(completion: @escaping (Bool) -> Void)
-	func dismiss()
+	func edit(studentAge: Int)
 }

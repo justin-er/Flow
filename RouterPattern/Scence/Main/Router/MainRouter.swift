@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Main
 
 class MainRouter: MainRouterProtocol {
 

@@ -8,11 +8,13 @@
 import Foundation
 
 public struct Student {
-	public init(name: String, id: Int) {
+	public init(name: String, age: Int, id: Int) {
 		self.name = name
+		self.age = age
 		self.id = id
 	}
 	
 	public var name: String
 	public let id: Int
+	public var age: Int
 }

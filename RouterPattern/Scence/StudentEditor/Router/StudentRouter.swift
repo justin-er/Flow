@@ -11,17 +11,7 @@ class StudentRouter: StudentEditorRouterProtocol {
 	
 	weak var viewController: UIViewController?
 	
-	func login(completion: @escaping (Bool) -> Void) {
-		//
-	}
-	
-	func dismiss() {
-		viewController?.navigationController?.popViewController(animated: true)
+	func edit(studentAge: Int) {
 		
-		print(viewController?.navigationController ?? "NA")
-		print(viewController?.presentingViewController ?? "NA")
-		print(viewController?.splitViewController ?? "NA")
-		print(viewController?.tabBarController ?? "NA")
 	}
-
 }

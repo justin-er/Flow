@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol StudentEditorService {
+public protocol StudentEditorServiceProtocol {
 	
 	var serviceDelegate: StudentEditorServiceDelegate? { get set }
 	

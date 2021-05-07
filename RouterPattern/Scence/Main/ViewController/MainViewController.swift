@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Main
 
 class MainViewController: UIViewController {
 	
@@ -25,7 +24,7 @@ class MainViewController: UIViewController {
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
 	}
-	
+		
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		configViewController()
@@ -48,6 +47,7 @@ class MainViewController: UIViewController {
 	
 	func configViewController() {
 		view.backgroundColor = .systemBackground
+		self.title = "Student List"
 	}
 	
 	func configTableView() {
@@ -81,7 +81,8 @@ extension MainViewController: UITableViewDelegate {
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 		guard let cell = tableView.cellForRow(at: indexPath) as? StudentTableViewCell else { return }
-		presenter.edit(student: cell.id)
+		guard let studentViewModel = cell.model else { return }
+		presenter.edit(student: studentViewModel.id)
 	}
 }
 
@@ -100,9 +101,12 @@ extension MainViewController: UITableViewDataSource {
 			return UITableViewCell()
 		}
 		
-		cell.accessoryType = .disclosureIndicator
-		cell.id = studentViewModel.id
-		cell.textLabel?.text = studentViewModel.name
+		cell.model = studentViewModel
+		var content = cell.defaultContentConfiguration()
+		content.text = studentViewModel.name
+		content.secondaryText = "\(studentViewModel.age)"
+		
+		cell.contentConfiguration = content
 		
 		return cell
 	}

@@ -10,9 +10,9 @@ import Foundation
 class StudentEditorPresenter: StudentEditorPresenterProtocol {
 	
 	weak var delegate: StudentEditorPresenterDelegate?
-	let interactor: StudentEditorInteractor
+	let interactor: StudentEditorInteractorProtocol
 	
-	init(interactor: StudentEditorInteractor) {
+	init(interactor: StudentEditorInteractorProtocol) {
 		self.interactor = interactor
 	}
 	
@@ -21,8 +21,12 @@ class StudentEditorPresenter: StudentEditorPresenterProtocol {
 	}
 	
 	func applyChanges(student: StudentViewModel) {
-		let student = Student(name: student.name, id: student.id)
+		let student = Student(name: student.name, age: student.age, id: student.id)
 		interactor.applyChanges(student: student)
+	}
+	
+	func edit(studentAge: Int) {
+		interactor.edit(studentAge: studentAge)
 	}
 }
 
@@ -31,7 +35,7 @@ extension StudentEditorPresenter: StudentEditorInteracgtorDelegate {
 	func studentEditorInteractorDidLoad(student: Student?) {
 		
 		guard let student = student else { return }
-		let studentViewModel = StudentViewModel(id: student.id, name: student.name)
+		let studentViewModel = StudentViewModel(id: student.id, name: student.name, age: student.age)
 		delegate?.studentEditorPresenterDidLoad(student: studentViewModel)
 	}
 

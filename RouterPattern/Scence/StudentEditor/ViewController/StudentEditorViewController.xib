@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StudentEditorViewController" customModule="RouterPattern" customModuleProvider="target">
             <connections>
+                <outlet property="ageTextField" destination="ylR-Jz-sgG" id="NHo-Mw-GPV"/>
                 <outlet property="receivedLabel" destination="gZg-8j-iZE" id="6XX-bC-S88"/>
                 <outlet property="textField" destination="mrp-Jy-FEu" id="fU9-3c-82c"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -20,19 +21,29 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Received Stirng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZg-8j-iZE">
-                    <rect key="frame" x="147" y="145" width="120" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZg-8j-iZE">
+                    <rect key="frame" x="16" y="145" width="110" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylR-Jz-sgG">
+                    <rect key="frame" x="16" y="236" width="382" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mrp-Jy-FEu">
-                    <rect key="frame" x="16" y="198" width="382" height="34"/>
+                    <rect key="frame" x="16" y="182" width="382" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-My-1bq">
+                    <rect key="frame" x="16" y="285" width="382" height="30"/>
+                    <state key="normal" title="Edit Age"/>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-Ou-eXn">
-                    <rect key="frame" x="16" y="272" width="382" height="30"/>
+                    <rect key="frame" x="20" y="323" width="382" height="30"/>
                     <state key="normal" title="Done"/>
                     <connections>
                         <action selector="doneButtonDidTap:" destination="-1" eventType="touchUpInside" id="ncx-xQ-98J"/>
@@ -42,15 +53,22 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="mrp-Jy-FEu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="O53-Lg-7FD"/>
-                <constraint firstItem="GL0-Ou-eXn" firstAttribute="top" secondItem="mrp-Jy-FEu" secondAttribute="bottom" constant="40" id="UdB-9z-m8G"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mrp-Jy-FEu" secondAttribute="trailing" constant="16" id="Xa3-fo-Muj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GL0-Ou-eXn" secondAttribute="trailing" constant="16" id="YJQ-7w-REw"/>
-                <constraint firstItem="mrp-Jy-FEu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f7w-XB-tgW"/>
-                <constraint firstItem="mrp-Jy-FEu" firstAttribute="top" secondItem="gZg-8j-iZE" secondAttribute="bottom" constant="32" id="kWL-5t-IsF"/>
-                <constraint firstItem="gZg-8j-iZE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pQC-5M-gLu"/>
-                <constraint firstItem="gZg-8j-iZE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="101" id="tm7-dc-q0o"/>
-                <constraint firstItem="GL0-Ou-eXn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="zr2-Jv-NJw"/>
+                <constraint firstItem="2bQ-My-1bq" firstAttribute="top" secondItem="GL0-Ou-eXn" secondAttribute="bottom" constant="-68" id="2Ut-fJ-CeM"/>
+                <constraint firstItem="mrp-Jy-FEu" firstAttribute="leading" secondItem="gZg-8j-iZE" secondAttribute="leading" id="4z8-5H-Tab"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2bQ-My-1bq" secondAttribute="trailing" constant="16" id="9lB-hd-Pyi"/>
+                <constraint firstItem="GL0-Ou-eXn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="4" id="CKm-GE-bfp"/>
+                <constraint firstItem="mrp-Jy-FEu" firstAttribute="top" secondItem="gZg-8j-iZE" secondAttribute="bottom" constant="16" id="Vxh-xd-Syz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GL0-Ou-eXn" secondAttribute="trailing" constant="12" id="eyu-HN-vxc"/>
+                <constraint firstItem="mrp-Jy-FEu" firstAttribute="trailing" secondItem="ylR-Jz-sgG" secondAttribute="trailing" id="gLR-8e-WSQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ylR-Jz-sgG" secondAttribute="trailing" constant="16" id="mFM-u7-FLe"/>
+                <constraint firstItem="2bQ-My-1bq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="mLG-6I-rOQ"/>
+                <constraint firstItem="mrp-Jy-FEu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="182" id="opd-EG-Zv2"/>
+                <constraint firstItem="ylR-Jz-sgG" firstAttribute="top" secondItem="mrp-Jy-FEu" secondAttribute="bottom" constant="20" id="rBp-H6-7fn"/>
+                <constraint firstItem="ylR-Jz-sgG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="t9y-zs-zN1"/>
+                <constraint firstItem="mrp-Jy-FEu" firstAttribute="leading" secondItem="ylR-Jz-sgG" secondAttribute="leading" id="vDu-h3-OHx"/>
+                <constraint firstItem="2bQ-My-1bq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wPG-uo-Tke"/>
+                <constraint firstItem="GL0-Ou-eXn" firstAttribute="top" secondItem="ylR-Jz-sgG" secondAttribute="bottom" constant="66" id="znB-MM-E6S"/>
+                <constraint firstItem="GL0-Ou-eXn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="znE-A9-zaE"/>
             </constraints>
             <point key="canvasLocation" x="28.985507246376812" y="94.419642857142847"/>
         </view>

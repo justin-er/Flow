@@ -18,11 +18,11 @@ class MainInteractor: MainInteractorProtocol {
 		self.router = coordinator
 		
 		dataSource = [
-			Student(name: "Ario Eghtedari", id: 0),
-			Student(name: "John Haggerd", id: 1),
-			Student(name: "Jason White", id: 2),
-			Student(name: "Ario Sobhani", id: 3),
-			Student(name: "Nina Schlencker", id: 4),
+			Student(name: "Ario Eghtedari", age: 42, id: 0),
+			Student(name: "John Haggerd", age: 34, id: 1),
+			Student(name: "Jason White", age: 27, id: 2),
+			Student(name: "Ario Sobhani", age: 30, id: 3),
+			Student(name: "Nina Schlencker", age: 33, id: 4),
 		]
 	}
 	

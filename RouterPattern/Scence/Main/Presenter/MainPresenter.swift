@@ -40,7 +40,7 @@ extension MainPresenter: MainInteractorDelegate {
 	func mainInteractorDidLoad(students: [Student]) {
 		
 		dataSource = students.map({ student in
-			StudentViewModel(id: student.id, name: student.name)
+			StudentViewModel(id: student.id, name: student.name, age: student.age)
 		})
 		
 		delegate?.mainPresenterDidLoad()
@@ -49,7 +49,7 @@ extension MainPresenter: MainInteractorDelegate {
 	func mainInteractorDidUpdate(studnet: Student) {
 		for (i, item) in dataSource.enumerated() {
 			if item.id == studnet.id {
-				dataSource[i] = StudentViewModel(id: studnet.id, name: studnet.name)
+				dataSource[i] = StudentViewModel(id: studnet.id, name: studnet.name, age: studnet.age)
 				delegate?.mainPresenterDidUpdate(at: IndexPath(row: i, section: 0))
 			}
 		}

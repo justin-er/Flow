@@ -9,10 +9,15 @@ import UIKit
 
 class StudentTableViewCell: UITableViewCell {
 	
-	var id: Int = 0
+	var model: StudentViewModel?
 		
+	func configCell() {
+		self.accessoryType = .disclosureIndicator
+	}
+	
     override func awakeFromNib() {
         super.awakeFromNib()
+		configCell()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

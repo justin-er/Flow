@@ -13,4 +13,5 @@ protocol StudentEditorPresenterProtocol {
 	
 	func loadStudent()
 	func applyChanges(student: StudentViewModel)
+	func edit(studentAge: Int)
 }
