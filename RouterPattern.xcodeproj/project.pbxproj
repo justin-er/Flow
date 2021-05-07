@@ -29,8 +29,16 @@
 		E170BD762642FC8600AA2A43 /* MainPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD752642FC8600AA2A43 /* MainPresenterProtocol.swift */; };
 		E170BD782642FC9600AA2A43 /* MainPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD772642FC9600AA2A43 /* MainPresenterDelegate.swift */; };
 		E170BD7A2642FDBF00AA2A43 /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD792642FDBF00AA2A43 /* StudentViewModel.swift */; };
+		E1826CE02645660700A808AB /* StudentAgeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826CDF2645660700A808AB /* StudentAgeEditor.swift */; };
+		E1826CE22645666000A808AB /* StudentAgeEditorInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826CE12645666000A808AB /* StudentAgeEditorInteractorProtocol.swift */; };
+		E1826CE42645667B00A808AB /* StudentAgeEditorServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826CE32645667B00A808AB /* StudentAgeEditorServiceProtocol.swift */; };
+		E1826CE72645669900A808AB /* StudentAgeEditorInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826CE62645669900A808AB /* StudentAgeEditorInteractorDelegate.swift */; };
+		E1826CE9264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826CE8264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift */; };
 		E18B3A1C261E2AF30099AE65 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B3A1B261E2AF30099AE65 /* AppRouter.swift */; };
 		E1AF89D4261EE9E70030B37F /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF89D3261EE9E70030B37F /* MainRouter.swift */; };
+		E1B2A5A12645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A59E2645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift */; };
+		E1B2A5A22645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A59F2645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift */; };
+		E1B2A5A32645AC8400919788 /* StudentAgeEditorPresetner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A5A02645AC8400919788 /* StudentAgeEditorPresetner.swift */; };
 		E1C504B4261B56A700087D61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C504B3261B56A700087D61 /* AppDelegate.swift */; };
 		E1C504B6261B56A700087D61 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C504B5261B56A700087D61 /* SceneDelegate.swift */; };
 		E1C504B8261B56A700087D61 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C504B7261B56A700087D61 /* MainViewController.swift */; };
@@ -41,6 +49,9 @@
 		E1D260B2261EFC9C00CE8FC8 /* StudentEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260B0261EFC9C00CE8FC8 /* StudentEditorViewController.swift */; };
 		E1D260B3261EFC9C00CE8FC8 /* StudentEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D260B1261EFC9C00CE8FC8 /* StudentEditorViewController.xib */; };
 		E1D260C3261F0E9C00CE8FC8 /* StudentEditorViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260C2261F0E9C00CE8FC8 /* StudentEditorViewControllerFactory.swift */; };
+		E1D94F1126456A6B00ED63B2 /* StudentAgeEditorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D94F1026456A6B00ED63B2 /* StudentAgeEditorProtocol.swift */; };
+		E1D94F1A2645702E00ED63B2 /* StudentAgeEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D94F182645702E00ED63B2 /* StudentAgeEditorViewController.swift */; };
+		E1D94F1B2645702E00ED63B2 /* StudentAgeEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1D94F192645702E00ED63B2 /* StudentAgeEditorViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,9 +81,17 @@
 		E175903D2641AE7F004C9AA0 /* StudentEditorServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorServiceProtocol.swift; sourceTree = "<group>"; };
 		E175903F2641AEC7004C9AA0 /* StudentEditorInteracgtorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorInteracgtorDelegate.swift; sourceTree = "<group>"; };
 		E17590412641AED6004C9AA0 /* StudentEditorServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorServiceDelegate.swift; sourceTree = "<group>"; };
+		E1826CDF2645660700A808AB /* StudentAgeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditor.swift; sourceTree = "<group>"; };
+		E1826CE12645666000A808AB /* StudentAgeEditorInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorInteractorProtocol.swift; sourceTree = "<group>"; };
+		E1826CE32645667B00A808AB /* StudentAgeEditorServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorServiceProtocol.swift; sourceTree = "<group>"; };
+		E1826CE62645669900A808AB /* StudentAgeEditorInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorInteractorDelegate.swift; sourceTree = "<group>"; };
+		E1826CE8264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorServiceDelegate.swift; sourceTree = "<group>"; };
 		E18B3A1B261E2AF30099AE65 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		E1AF89CD261EE9C10030B37F /* MainRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouterProtocol.swift; sourceTree = "<group>"; };
 		E1AF89D3261EE9E70030B37F /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		E1B2A59E2645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorPresetnerProtocol.swift; sourceTree = "<group>"; };
+		E1B2A59F2645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorPresetnerDelegate.swift; sourceTree = "<group>"; };
+		E1B2A5A02645AC8400919788 /* StudentAgeEditorPresetner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorPresetner.swift; sourceTree = "<group>"; };
 		E1C504B0261B56A700087D61 /* RouterPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C504B3261B56A700087D61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1C504B5261B56A700087D61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +112,9 @@
 		E1D260BA261F0E2A00CE8FC8 /* StudentEditorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorFactory.swift; sourceTree = "<group>"; };
 		E1D260C2261F0E9C00CE8FC8 /* StudentEditorViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorViewControllerFactory.swift; sourceTree = "<group>"; };
 		E1D260D4261F295A00CE8FC8 /* MainInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorDelegate.swift; sourceTree = "<group>"; };
+		E1D94F1026456A6B00ED63B2 /* StudentAgeEditorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorProtocol.swift; sourceTree = "<group>"; };
+		E1D94F182645702E00ED63B2 /* StudentAgeEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorViewController.swift; sourceTree = "<group>"; };
+		E1D94F192645702E00ED63B2 /* StudentAgeEditorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentAgeEditorViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +131,9 @@
 		E11E8822264563BA00B649EA /* StudentAgeEditor */ = {
 			isa = PBXGroup;
 			children = (
+				E1826CDF2645660700A808AB /* StudentAgeEditor.swift */,
+				E1826CE52645668100A808AB /* Input */,
+				E1826CEA264566AF00A808AB /* Output */,
 			);
 			path = StudentAgeEditor;
 			sourceTree = "<group>";
@@ -148,14 +173,6 @@
 				E170BD632642E88B00AA2A43 /* StudentEditorPresenterDelegate.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		E170BD682642F17700AA2A43 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				E1D25FA3261EEBD000CE8FC8 /* StudentEditor.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		E170BD6C2642F3E800AA2A43 /* Input */ = {
@@ -201,6 +218,25 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		E1826CE52645668100A808AB /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				E1D94F1026456A6B00ED63B2 /* StudentAgeEditorProtocol.swift */,
+				E1826CE12645666000A808AB /* StudentAgeEditorInteractorProtocol.swift */,
+				E1826CE32645667B00A808AB /* StudentAgeEditorServiceProtocol.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		E1826CEA264566AF00A808AB /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				E1826CE62645669900A808AB /* StudentAgeEditorInteractorDelegate.swift */,
+				E1826CE8264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
 		E1AF89C2261EE9720030B37F /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +262,7 @@
 		E1AF89C4261EE98B0030B37F /* StudentEditor */ = {
 			isa = PBXGroup;
 			children = (
-				E170BD682642F17700AA2A43 /* Interactor */,
+				E1D25FA3261EEBD000CE8FC8 /* StudentEditor.swift */,
 				E170BD5E2642E5A800AA2A43 /* Input */,
 				E170BD5F2642E5AF00AA2A43 /* Output */,
 				E1D260FD261F4AEC00CE8FC8 /* Factory */,
@@ -296,6 +332,7 @@
 			children = (
 				E1D2607F261EF67200CE8FC8 /* Main */,
 				E1D26086261EF67800CE8FC8 /* StudentEditor */,
+				E1D94F1726456FF600ED63B2 /* StudentAgeEditor */,
 			);
 			path = Scence;
 			sourceTree = "<group>";
@@ -388,6 +425,34 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		E1D94F1726456FF600ED63B2 /* StudentAgeEditor */ = {
+			isa = PBXGroup;
+			children = (
+				E1D94F1C2645703900ED63B2 /* VeiwController */,
+				E1D94F1F2645726800ED63B2 /* Presenter */,
+			);
+			path = StudentAgeEditor;
+			sourceTree = "<group>";
+		};
+		E1D94F1C2645703900ED63B2 /* VeiwController */ = {
+			isa = PBXGroup;
+			children = (
+				E1D94F182645702E00ED63B2 /* StudentAgeEditorViewController.swift */,
+				E1D94F192645702E00ED63B2 /* StudentAgeEditorViewController.xib */,
+			);
+			path = VeiwController;
+			sourceTree = "<group>";
+		};
+		E1D94F1F2645726800ED63B2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E1B2A59E2645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift */,
+				E1B2A5A02645AC8400919788 /* StudentAgeEditorPresetner.swift */,
+				E1B2A59F2645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1C504C0261B56AB00087D61 /* LaunchScreen.storyboard in Resources */,
+				E1D94F1B2645702E00ED63B2 /* StudentAgeEditorViewController.xib in Resources */,
 				E1D260B3261EFC9C00CE8FC8 /* StudentEditorViewController.xib in Resources */,
 				E1C504BD261B56AB00087D61 /* Assets.xcassets in Resources */,
 			);
@@ -459,9 +525,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1826CE42645667B00A808AB /* StudentAgeEditorServiceProtocol.swift in Sources */,
+				E1826CE72645669900A808AB /* StudentAgeEditorInteractorDelegate.swift in Sources */,
 				E1C504B8261B56A700087D61 /* MainViewController.swift in Sources */,
 				E162DC0A264456E50080EC78 /* StudentTableViewCell.swift in Sources */,
 				E162DC03264429A90080EC78 /* StudentEditorInteracgtorDelegate.swift in Sources */,
+				E1D94F1A2645702E00ED63B2 /* StudentAgeEditorViewController.swift in Sources */,
+				E1826CE22645666000A808AB /* StudentAgeEditorInteractorProtocol.swift in Sources */,
 				E1D25FB2261EED5800CE8FC8 /* StudentRouter.swift in Sources */,
 				E162DBFA264428E00080EC78 /* MainInteractorFactory.swift in Sources */,
 				E170BD612642E7EF00AA2A43 /* StudentEditorPresenter.swift in Sources */,
@@ -471,9 +541,12 @@
 				E1AF89D4261EE9E70030B37F /* MainRouter.swift in Sources */,
 				E170BD782642FC9600AA2A43 /* MainPresenterDelegate.swift in Sources */,
 				E1D260C3261F0E9C00CE8FC8 /* StudentEditorViewControllerFactory.swift in Sources */,
+				E1826CE02645660700A808AB /* StudentAgeEditor.swift in Sources */,
 				E18B3A1C261E2AF30099AE65 /* AppRouter.swift in Sources */,
+				E1D94F1126456A6B00ED63B2 /* StudentAgeEditorProtocol.swift in Sources */,
 				E162DBF9264428DD0080EC78 /* MainInteractorDelegate.swift in Sources */,
 				E162DC02264429A50080EC78 /* StudentEditorProtocol.swift in Sources */,
+				E1826CE9264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift in Sources */,
 				E170BD732642FC6500AA2A43 /* MainPresenter.swift in Sources */,
 				E162DBFB264428E30080EC78 /* MainRouterProtocol.swift in Sources */,
 				E1C504B4261B56A700087D61 /* AppDelegate.swift in Sources */,
@@ -482,7 +555,10 @@
 				E1C504B6261B56A700087D61 /* SceneDelegate.swift in Sources */,
 				E162DC05264429AB0080EC78 /* StudentEditorFactory.swift in Sources */,
 				E170BD762642FC8600AA2A43 /* MainPresenterProtocol.swift in Sources */,
+				E1B2A5A12645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift in Sources */,
 				E162DC00264429A50080EC78 /* StudentEditorInteractorProtocol.swift in Sources */,
+				E1B2A5A32645AC8400919788 /* StudentAgeEditorPresetner.swift in Sources */,
+				E1B2A5A22645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift in Sources */,
 				E162DBF8264428D90080EC78 /* MainInteractorProtocol.swift in Sources */,
 				E170BD7A2642FDBF00AA2A43 /* StudentViewModel.swift in Sources */,
 				E1D2608E261EF72200CE8FC8 /* MainViewControllerFactory.swift in Sources */,
