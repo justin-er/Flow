@@ -10,8 +10,30 @@ import UIKit
 class StudentRouter: StudentEditorRouterProtocol {
 	
 	weak var viewController: UIViewController?
+	var completion: ((Int, StudentEditorNextOperation) -> Void)?
 	
-	func edit(studentAge: Int) {
+	func edit(studentAge: Int, completion: @escaping (Int, StudentEditorNextOperation) -> Void) {
 		
+		self.completion = completion
+		var (studentAgeEitorService, studenAgeEditorViewController) = StudentAgeEditorViewControllerFactory().build()
+		studentAgeEitorService.serviceDelegate = self
+		studentAgeEitorService.edit(studentAge: studentAge)
+		viewController?.navigationController?.pushViewController(studenAgeEditorViewController, animated: true)
 	}
+}
+
+extension StudentRouter: StudentAgeEditorServiceDelegate {
+	
+	func studentAgeEditorServiceDidModify(studentAge: Int, nextOperation: StudentAgeEditorNextOperation) {
+		switch nextOperation {
+		case .done:
+			completion?(studentAge, .done)
+			
+		case .keepEditing:
+			completion?(studentAge, .keepEditing)
+			guard let viewController = viewController else { return }
+			viewController.navigationController?.popToViewController(viewController, animated: true)
+		}
+	}
+	
 }

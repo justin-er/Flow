@@ -9,5 +9,27 @@ import Foundation
 
 class StudentAgeEditorPresetner: StudentAgeEditorPresetnerProtocol {
 	
-	var delegate: StudentAgeEditorPresetnerDelegate?
+	weak var delegate: StudentAgeEditorPresetnerDelegate?
+	let interactor: StudentAgeEditorInteractorProtocol
+	
+	init(interactor: StudentAgeEditorInteractorProtocol) {
+		self.interactor = interactor
+	}
+	
+	func loadStudentAge() {
+		interactor.loadStudentAge()
+	}
+	
+	func apply(editedAge: Int, nextOperation: StudentAgeEditorNextOperation) {
+		interactor.apply(age: editedAge, nextOperation: nextOperation)
+	}
+	
+}
+
+extension StudentAgeEditorPresetner: StudentAgeEditorInteractorDelegate {
+	
+	func StudentAgeEditorInteractorDidLoad(age: Int?) {
+		delegate?.studentAgeEditorPresetnerDidLoad(age: age)
+	}
+
 }

@@ -31,6 +31,14 @@ class StudentEditorPresenter: StudentEditorPresenterProtocol {
 }
 
 extension StudentEditorPresenter: StudentEditorInteracgtorDelegate {
+		
+	func getEditedstudent() -> Student? {
+		guard let studentVidwModel = delegate?.getEditedstudent() else { return nil }
+		let student = Student(name: studentVidwModel.name,
+							  age: studentVidwModel.age,
+							  id: studentVidwModel.id)
+		return student
+	}
 	
 	func studentEditorInteractorDidLoad(student: Student?) {
 		

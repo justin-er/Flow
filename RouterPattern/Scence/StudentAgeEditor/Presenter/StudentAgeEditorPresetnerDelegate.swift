@@ -9,4 +9,6 @@ import Foundation
 
 protocol StudentAgeEditorPresetnerDelegate: AnyObject {
 	
+	func studentAgeEditorPresetnerDidLoad(age: Int?) 
+
 }

@@ -11,6 +11,6 @@ protocol StudentAgeEditorInteractorProtocol {
 
 	var interactorDelegate: StudentAgeEditorInteractorDelegate? { get set }
 	
-	func load(age: Int?)
-	func apply(age: Int)
+	func loadStudentAge()
+	func apply(age: Int, nextOperation: StudentAgeEditorNextOperation)
 }

@@ -9,6 +9,6 @@ import Foundation
 
 struct StudentViewModel {
 	let id: Int
-	let name: String
+	var name: String
 	let age: Int
 }

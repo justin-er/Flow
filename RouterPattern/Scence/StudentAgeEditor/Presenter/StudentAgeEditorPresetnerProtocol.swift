@@ -10,4 +10,8 @@ import Foundation
 protocol StudentAgeEditorPresetnerProtocol {
 	
 	var delegate: StudentAgeEditorPresetnerDelegate? { get set }
+	
+	func loadStudentAge()
+	
+	func apply(editedAge: Int, nextOperation: StudentAgeEditorNextOperation)
 }

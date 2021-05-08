@@ -9,5 +9,6 @@ import Foundation
 
 public protocol StudentEditorInteracgtorDelegate: AnyObject {
 	
+	func getEditedstudent() -> Student?
 	func studentEditorInteractorDidLoad(student: Student?)
 }

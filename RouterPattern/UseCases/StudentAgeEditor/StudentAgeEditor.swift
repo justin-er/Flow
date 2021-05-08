@@ -17,14 +17,14 @@ class StudentAgeEditor: StudentAgeEditorProtocol {
 
 extension StudentAgeEditor: StudentAgeEditorInteractorProtocol {
 	
-	func load(age: Int?) {
-		interactorDelegate?.studnetAgeEditorDidLoad(age: studentAge)
+	func loadStudentAge() {
+		interactorDelegate?.StudentAgeEditorInteractorDidLoad(age: studentAge)
 	}
 
 	
-	func apply(age: Int) {
+	func apply(age: Int, nextOperation: StudentAgeEditorNextOperation) {
 		self.studentAge = age
-		serviceDelegate?.studentAgeEditorServiceDidModify(studentAge: age)
+		serviceDelegate?.studentAgeEditorServiceDidModify(studentAge: age, nextOperation: nextOperation)
 	}
 
 }

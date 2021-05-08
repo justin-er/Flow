@@ -32,9 +32,19 @@ extension StudentEditor: StudentEditorInteractorProtocol {
 	}
 	
 	func edit(studentAge: Int) {
-		router.edit(studentAge: studentAge)
+		router.edit(studentAge: studentAge) {[weak self] newAge, nextOperation in
+			switch nextOperation {
+			case .keepEditing:
+				self?.editingStudent?.age = newAge
+				self?.loadStudent()
+			
+			case .done:
+				guard var editedStudent = self?.interactorDelegate?.getEditedstudent() else { return }
+				editedStudent.age = newAge
+				self?.serviceDelegate?.studentEditorServiceDidModify(student: editedStudent)
+			}
+		}
 	}
-
 }
 
 extension StudentEditor: StudentEditorServiceProtocol {

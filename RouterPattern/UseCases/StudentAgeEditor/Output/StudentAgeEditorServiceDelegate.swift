@@ -9,6 +9,6 @@ import Foundation
 
 protocol StudentAgeEditorServiceDelegate: AnyObject {
 	
-	func studentAgeEditorServiceDidModify(studentAge: Int)
+	func studentAgeEditorServiceDidModify(studentAge: Int, nextOperation: StudentAgeEditorNextOperation)
 
 }

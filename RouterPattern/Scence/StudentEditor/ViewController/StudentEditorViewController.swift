@@ -26,6 +26,10 @@ class StudentEditorViewController: UIViewController {
 		self.title = "Edit Student Name"
 	}
 	
+	private func configTextField() {
+		textField.addTarget(self, action: #selector(textFieldDidChange(textField:)), for: .editingChanged)
+	}
+		
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		presenter.loadStudent()
@@ -38,16 +42,31 @@ class StudentEditorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		configViewController()
+		configTextField()
     }
+	
+	@objc
+	func textFieldDidChange(textField: UITextField) {
+		student?.name = textField.text ?? ""
+	}
 	
 	@IBAction func doneButtonDidTap(_ sender: UIButton) {
 		guard let student = student else { return }
 		let modifiedStudent = StudentViewModel(id: student.id, name: textField.text ?? "", age: student.age)
 		presenter.applyChanges(student: modifiedStudent)
 	}
+	
+	@IBAction func editAgeButtonDidTap(_ sender: Any) {
+		guard let age = student?.age else { return }
+		presenter.edit(studentAge: age)
+	}
 }
 
 extension StudentEditorViewController: StudentEditorPresenterDelegate {
+	
+	func getEditedstudent() -> StudentViewModel? {
+		student
+	}
 	
 	func studentEditorPresenterDidLoad(student: StudentViewModel) {
 		self.student = student

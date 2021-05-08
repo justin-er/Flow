@@ -41,6 +41,9 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bQ-My-1bq">
                     <rect key="frame" x="16" y="285" width="382" height="30"/>
                     <state key="normal" title="Edit Age"/>
+                    <connections>
+                        <action selector="editAgeButtonDidTap:" destination="-1" eventType="touchUpInside" id="awK-s6-bdN"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GL0-Ou-eXn">
                     <rect key="frame" x="20" y="323" width="382" height="30"/>

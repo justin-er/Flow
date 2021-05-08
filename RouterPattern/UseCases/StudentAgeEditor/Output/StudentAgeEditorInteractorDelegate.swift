@@ -9,5 +9,5 @@ import Foundation
 
 protocol StudentAgeEditorInteractorDelegate: AnyObject {
 	
-	func studnetAgeEditorDidLoad(age: Int?)
+	func StudentAgeEditorInteractorDidLoad(age: Int?)
 }

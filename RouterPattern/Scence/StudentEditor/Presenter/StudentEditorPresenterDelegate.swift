@@ -9,5 +9,6 @@ import Foundation
 
 protocol StudentEditorPresenterDelegate: AnyObject {
 	
+	func getEditedstudent() -> StudentViewModel?
 	func studentEditorPresenterDidLoad(student: StudentViewModel)
 }
