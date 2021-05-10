@@ -13,19 +13,19 @@
 		E162DBF9264428DD0080EC78 /* MainInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260D4261F295A00CE8FC8 /* MainInteractorDelegate.swift */; };
 		E162DBFA264428E00080EC78 /* MainInteractorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D2609B261EF78B00CE8FC8 /* MainInteractorFactory.swift */; };
 		E162DBFB264428E30080EC78 /* MainRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF89CD261EE9C10030B37F /* MainRouterProtocol.swift */; };
-		E162DBFD2644299F0080EC78 /* StudentEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA3261EEBD000CE8FC8 /* StudentEditor.swift */; };
-		E162DC00264429A50080EC78 /* StudentEditorInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D26022261EF30800CE8FC8 /* StudentEditorInteractorProtocol.swift */; };
-		E162DC01264429A50080EC78 /* StudentEditorServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175903D2641AE7F004C9AA0 /* StudentEditorServiceProtocol.swift */; };
-		E162DC02264429A50080EC78 /* StudentEditorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD5B2642E3CA00AA2A43 /* StudentEditorProtocol.swift */; };
-		E162DC03264429A90080EC78 /* StudentEditorInteracgtorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175903F2641AEC7004C9AA0 /* StudentEditorInteracgtorDelegate.swift */; };
-		E162DC04264429A90080EC78 /* StudentEditorServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17590412641AED6004C9AA0 /* StudentEditorServiceDelegate.swift */; };
-		E162DC05264429AB0080EC78 /* StudentEditorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260BA261F0E2A00CE8FC8 /* StudentEditorFactory.swift */; };
-		E162DC06264429AE0080EC78 /* StudnetRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA9261EECD000CE8FC8 /* StudnetRouterProtocol.swift */; };
+		E162DBFD2644299F0080EC78 /* StudentNameEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA3261EEBD000CE8FC8 /* StudentNameEditor.swift */; };
+		E162DC00264429A50080EC78 /* StudentNameEditorInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D26022261EF30800CE8FC8 /* StudentNameEditorInteractorProtocol.swift */; };
+		E162DC01264429A50080EC78 /* StudentNameEditorServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175903D2641AE7F004C9AA0 /* StudentNameEditorServiceProtocol.swift */; };
+		E162DC02264429A50080EC78 /* StudentNameEditorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD5B2642E3CA00AA2A43 /* StudentNameEditorProtocol.swift */; };
+		E162DC03264429A90080EC78 /* StudentNameEditorInteracgtorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175903F2641AEC7004C9AA0 /* StudentNameEditorInteracgtorDelegate.swift */; };
+		E162DC04264429A90080EC78 /* StudentNameEditorServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17590412641AED6004C9AA0 /* StudentNameEditorServiceDelegate.swift */; };
+		E162DC05264429AB0080EC78 /* StudentNameEditorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D260BA261F0E2A00CE8FC8 /* StudentNameEditorFactory.swift */; };
+		E162DC06264429AE0080EC78 /* StudentNameEditorRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D25FA9261EECD000CE8FC8 /* StudentNameEditorRouterProtocol.swift */; };
 		E162DC0826442DA10080EC78 /* StudentEditorPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162DC0726442DA10080EC78 /* StudentEditorPresenterProtocol.swift */; };
 		E162DC0A264456E50080EC78 /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E162DC09264456E50080EC78 /* StudentTableViewCell.swift */; };
 		E16718B42646E4E200AC8388 /* StudentAgeEditorViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16718B32646E4E200AC8388 /* StudentAgeEditorViewControllerFactory.swift */; };
 		E16718B72646EDA600AC8388 /* StudentAgeEditorNextOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16718B62646EDA600AC8388 /* StudentAgeEditorNextOperation.swift */; };
-		E16718BA2646F8E100AC8388 /* StudentEditorNextOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16718B92646F8E100AC8388 /* StudentEditorNextOperation.swift */; };
+		E16718BA2646F8E100AC8388 /* StudentNameEditorNextOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16718B92646F8E100AC8388 /* StudentNameEditorNextOperation.swift */; };
 		E170BD612642E7EF00AA2A43 /* StudentEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD602642E7EF00AA2A43 /* StudentEditorPresenter.swift */; };
 		E170BD642642E88B00AA2A43 /* StudentEditorPresenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD632642E88B00AA2A43 /* StudentEditorPresenterDelegate.swift */; };
 		E170BD732642FC6500AA2A43 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E170BD722642FC6500AA2A43 /* MainPresenter.swift */; };
@@ -75,8 +75,8 @@
 		E162DC09264456E50080EC78 /* StudentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
 		E16718B32646E4E200AC8388 /* StudentAgeEditorViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorViewControllerFactory.swift; sourceTree = "<group>"; };
 		E16718B62646EDA600AC8388 /* StudentAgeEditorNextOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorNextOperation.swift; sourceTree = "<group>"; };
-		E16718B92646F8E100AC8388 /* StudentEditorNextOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorNextOperation.swift; sourceTree = "<group>"; };
-		E170BD5B2642E3CA00AA2A43 /* StudentEditorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorProtocol.swift; sourceTree = "<group>"; };
+		E16718B92646F8E100AC8388 /* StudentNameEditorNextOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorNextOperation.swift; sourceTree = "<group>"; };
+		E170BD5B2642E3CA00AA2A43 /* StudentNameEditorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorProtocol.swift; sourceTree = "<group>"; };
 		E170BD602642E7EF00AA2A43 /* StudentEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorPresenter.swift; sourceTree = "<group>"; };
 		E170BD632642E88B00AA2A43 /* StudentEditorPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorPresenterDelegate.swift; sourceTree = "<group>"; };
 		E170BD702642F72A00AA2A43 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
@@ -84,9 +84,9 @@
 		E170BD752642FC8600AA2A43 /* MainPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterProtocol.swift; sourceTree = "<group>"; };
 		E170BD772642FC9600AA2A43 /* MainPresenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterDelegate.swift; sourceTree = "<group>"; };
 		E170BD792642FDBF00AA2A43 /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
-		E175903D2641AE7F004C9AA0 /* StudentEditorServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorServiceProtocol.swift; sourceTree = "<group>"; };
-		E175903F2641AEC7004C9AA0 /* StudentEditorInteracgtorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorInteracgtorDelegate.swift; sourceTree = "<group>"; };
-		E17590412641AED6004C9AA0 /* StudentEditorServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorServiceDelegate.swift; sourceTree = "<group>"; };
+		E175903D2641AE7F004C9AA0 /* StudentNameEditorServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorServiceProtocol.swift; sourceTree = "<group>"; };
+		E175903F2641AEC7004C9AA0 /* StudentNameEditorInteracgtorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorInteracgtorDelegate.swift; sourceTree = "<group>"; };
+		E17590412641AED6004C9AA0 /* StudentNameEditorServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorServiceDelegate.swift; sourceTree = "<group>"; };
 		E1826CDF2645660700A808AB /* StudentAgeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditor.swift; sourceTree = "<group>"; };
 		E1826CE12645666000A808AB /* StudentAgeEditorInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorInteractorProtocol.swift; sourceTree = "<group>"; };
 		E1826CE32645667B00A808AB /* StudentAgeEditorServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorServiceProtocol.swift; sourceTree = "<group>"; };
@@ -106,16 +106,16 @@
 		E1C504BF261B56AB00087D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1C504C1261B56AB00087D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RouterPattern/AppSupport/Info.plist; sourceTree = SOURCE_ROOT; };
 		E1D25F9B261EEB5100CE8FC8 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
-		E1D25FA3261EEBD000CE8FC8 /* StudentEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditor.swift; sourceTree = "<group>"; };
-		E1D25FA9261EECD000CE8FC8 /* StudnetRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudnetRouterProtocol.swift; sourceTree = "<group>"; };
+		E1D25FA3261EEBD000CE8FC8 /* StudentNameEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditor.swift; sourceTree = "<group>"; };
+		E1D25FA9261EECD000CE8FC8 /* StudentNameEditorRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorRouterProtocol.swift; sourceTree = "<group>"; };
 		E1D25FB1261EED5800CE8FC8 /* StudentRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentRouter.swift; sourceTree = "<group>"; };
 		E1D26014261EF2B500CE8FC8 /* MainInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorProtocol.swift; sourceTree = "<group>"; };
-		E1D26022261EF30800CE8FC8 /* StudentEditorInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorInteractorProtocol.swift; sourceTree = "<group>"; };
+		E1D26022261EF30800CE8FC8 /* StudentNameEditorInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorInteractorProtocol.swift; sourceTree = "<group>"; };
 		E1D2608D261EF72200CE8FC8 /* MainViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerFactory.swift; sourceTree = "<group>"; };
 		E1D2609B261EF78B00CE8FC8 /* MainInteractorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorFactory.swift; sourceTree = "<group>"; };
 		E1D260B0261EFC9C00CE8FC8 /* StudentEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorViewController.swift; sourceTree = "<group>"; };
 		E1D260B1261EFC9C00CE8FC8 /* StudentEditorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentEditorViewController.xib; sourceTree = "<group>"; };
-		E1D260BA261F0E2A00CE8FC8 /* StudentEditorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorFactory.swift; sourceTree = "<group>"; };
+		E1D260BA261F0E2A00CE8FC8 /* StudentNameEditorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorFactory.swift; sourceTree = "<group>"; };
 		E1D260C2261F0E9C00CE8FC8 /* StudentEditorViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentEditorViewControllerFactory.swift; sourceTree = "<group>"; };
 		E1D260D4261F295A00CE8FC8 /* MainInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorDelegate.swift; sourceTree = "<group>"; };
 		E1D94F1026456A6B00ED63B2 /* StudentAgeEditorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorProtocol.swift; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 		E16718B82646F8E100AC8388 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E16718B92646F8E100AC8388 /* StudentEditorNextOperation.swift */,
+				E16718B92646F8E100AC8388 /* StudentNameEditorNextOperation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,9 +180,9 @@
 		E170BD5E2642E5A800AA2A43 /* Input */ = {
 			isa = PBXGroup;
 			children = (
-				E170BD5B2642E3CA00AA2A43 /* StudentEditorProtocol.swift */,
-				E1D26022261EF30800CE8FC8 /* StudentEditorInteractorProtocol.swift */,
-				E175903D2641AE7F004C9AA0 /* StudentEditorServiceProtocol.swift */,
+				E170BD5B2642E3CA00AA2A43 /* StudentNameEditorProtocol.swift */,
+				E1D26022261EF30800CE8FC8 /* StudentNameEditorInteractorProtocol.swift */,
+				E175903D2641AE7F004C9AA0 /* StudentNameEditorServiceProtocol.swift */,
 			);
 			path = Input;
 			sourceTree = "<group>";
@@ -190,8 +190,8 @@
 		E170BD5F2642E5AF00AA2A43 /* Output */ = {
 			isa = PBXGroup;
 			children = (
-				E175903F2641AEC7004C9AA0 /* StudentEditorInteracgtorDelegate.swift */,
-				E17590412641AED6004C9AA0 /* StudentEditorServiceDelegate.swift */,
+				E175903F2641AEC7004C9AA0 /* StudentNameEditorInteracgtorDelegate.swift */,
+				E17590412641AED6004C9AA0 /* StudentNameEditorServiceDelegate.swift */,
 			);
 			path = Output;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				E1AF89C3261EE9840030B37F /* Main */,
-				E1AF89C4261EE98B0030B37F /* StudentEditor */,
+				E1AF89C4261EE98B0030B37F /* StudentNameEditor */,
 				E11E8822264563BA00B649EA /* StudentAgeEditor */,
 			);
 			path = UseCases;
@@ -290,17 +290,17 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		E1AF89C4261EE98B0030B37F /* StudentEditor */ = {
+		E1AF89C4261EE98B0030B37F /* StudentNameEditor */ = {
 			isa = PBXGroup;
 			children = (
-				E1D25FA3261EEBD000CE8FC8 /* StudentEditor.swift */,
+				E1D25FA3261EEBD000CE8FC8 /* StudentNameEditor.swift */,
 				E1D260FD261F4AEC00CE8FC8 /* Factory */,
 				E170BD5E2642E5A800AA2A43 /* Input */,
 				E170BD5F2642E5AF00AA2A43 /* Output */,
 				E1D25FA8261EEC0100CE8FC8 /* Router */,
 				E16718B82646F8E100AC8388 /* Models */,
 			);
-			path = StudentEditor;
+			path = StudentNameEditor;
 			sourceTree = "<group>";
 		};
 		E1AF89D2261EE9D30030B37F /* MainRouter */ = {
@@ -341,7 +341,7 @@
 		E1D25FA8261EEC0100CE8FC8 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				E1D25FA9261EECD000CE8FC8 /* StudnetRouterProtocol.swift */,
+				E1D25FA9261EECD000CE8FC8 /* StudentNameEditorRouterProtocol.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -403,7 +403,7 @@
 		E1D260FD261F4AEC00CE8FC8 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
-				E1D260BA261F0E2A00CE8FC8 /* StudentEditorFactory.swift */,
+				E1D260BA261F0E2A00CE8FC8 /* StudentNameEditorFactory.swift */,
 			);
 			path = Factory;
 			sourceTree = "<group>";
@@ -562,15 +562,15 @@
 				E1826CE72645669900A808AB /* StudentAgeEditorInteractorDelegate.swift in Sources */,
 				E1C504B8261B56A700087D61 /* MainViewController.swift in Sources */,
 				E162DC0A264456E50080EC78 /* StudentTableViewCell.swift in Sources */,
-				E162DC03264429A90080EC78 /* StudentEditorInteracgtorDelegate.swift in Sources */,
+				E162DC03264429A90080EC78 /* StudentNameEditorInteracgtorDelegate.swift in Sources */,
 				E1D94F1A2645702E00ED63B2 /* StudentAgeEditorViewController.swift in Sources */,
 				E1826CE22645666000A808AB /* StudentAgeEditorInteractorProtocol.swift in Sources */,
 				E1D25FB2261EED5800CE8FC8 /* StudentRouter.swift in Sources */,
 				E162DBFA264428E00080EC78 /* MainInteractorFactory.swift in Sources */,
 				E170BD612642E7EF00AA2A43 /* StudentEditorPresenter.swift in Sources */,
-				E162DBFD2644299F0080EC78 /* StudentEditor.swift in Sources */,
+				E162DBFD2644299F0080EC78 /* StudentNameEditor.swift in Sources */,
 				E170BD642642E88B00AA2A43 /* StudentEditorPresenterDelegate.swift in Sources */,
-				E162DC01264429A50080EC78 /* StudentEditorServiceProtocol.swift in Sources */,
+				E162DC01264429A50080EC78 /* StudentNameEditorServiceProtocol.swift in Sources */,
 				E1AF89D4261EE9E70030B37F /* MainRouter.swift in Sources */,
 				E170BD782642FC9600AA2A43 /* MainPresenterDelegate.swift in Sources */,
 				E1D260C3261F0E9C00CE8FC8 /* StudentEditorViewControllerFactory.swift in Sources */,
@@ -578,21 +578,21 @@
 				E18B3A1C261E2AF30099AE65 /* AppRouter.swift in Sources */,
 				E1D94F1126456A6B00ED63B2 /* StudentAgeEditorProtocol.swift in Sources */,
 				E162DBF9264428DD0080EC78 /* MainInteractorDelegate.swift in Sources */,
-				E162DC02264429A50080EC78 /* StudentEditorProtocol.swift in Sources */,
+				E162DC02264429A50080EC78 /* StudentNameEditorProtocol.swift in Sources */,
 				E1826CE9264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift in Sources */,
 				E16718B42646E4E200AC8388 /* StudentAgeEditorViewControllerFactory.swift in Sources */,
 				E170BD732642FC6500AA2A43 /* MainPresenter.swift in Sources */,
 				E162DBFB264428E30080EC78 /* MainRouterProtocol.swift in Sources */,
 				E1C504B4261B56A700087D61 /* AppDelegate.swift in Sources */,
-				E162DC04264429A90080EC78 /* StudentEditorServiceDelegate.swift in Sources */,
+				E162DC04264429A90080EC78 /* StudentNameEditorServiceDelegate.swift in Sources */,
 				E16718B72646EDA600AC8388 /* StudentAgeEditorNextOperation.swift in Sources */,
-				E162DC06264429AE0080EC78 /* StudnetRouterProtocol.swift in Sources */,
-				E16718BA2646F8E100AC8388 /* StudentEditorNextOperation.swift in Sources */,
+				E162DC06264429AE0080EC78 /* StudentNameEditorRouterProtocol.swift in Sources */,
+				E16718BA2646F8E100AC8388 /* StudentNameEditorNextOperation.swift in Sources */,
 				E1C504B6261B56A700087D61 /* SceneDelegate.swift in Sources */,
-				E162DC05264429AB0080EC78 /* StudentEditorFactory.swift in Sources */,
+				E162DC05264429AB0080EC78 /* StudentNameEditorFactory.swift in Sources */,
 				E170BD762642FC8600AA2A43 /* MainPresenterProtocol.swift in Sources */,
 				E1B2A5A12645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift in Sources */,
-				E162DC00264429A50080EC78 /* StudentEditorInteractorProtocol.swift in Sources */,
+				E162DC00264429A50080EC78 /* StudentNameEditorInteractorProtocol.swift in Sources */,
 				E1B2A5A32645AC8400919788 /* StudentAgeEditorPresetner.swift in Sources */,
 				E1B2A5A22645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift in Sources */,
 				E162DBF8264428D90080EC78 /* MainInteractorProtocol.swift in Sources */,

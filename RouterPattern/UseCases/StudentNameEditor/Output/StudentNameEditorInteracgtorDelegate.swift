@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol StudentEditorInteracgtorDelegate: AnyObject {
+public protocol StudentNameEditorInteracgtorDelegate: AnyObject {
 	
 	func getEditedstudent() -> Student?
 	func studentEditorInteractorDidLoad(student: Student?)

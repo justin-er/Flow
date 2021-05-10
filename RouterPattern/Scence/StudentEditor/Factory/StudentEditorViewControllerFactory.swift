@@ -9,9 +9,9 @@ import UIKit
 
 class StudentEditorViewControllerFactory {
 	
-	static func build() -> (StudentEditorServiceProtocol, StudentEditorViewController) {
+	static func build() -> (StudentNameEditorServiceProtocol, StudentEditorViewController) {
 		let router = StudentRouter()
-		var interactor = StudentEditorFactory.build(router: router)
+		var interactor = StudentNameEditorFactory.build(router: router)
 		let presenter = StudentEditorPresenter(interactor: interactor)
 		let viewController = StudentEditorViewController(presenter: presenter)
 		

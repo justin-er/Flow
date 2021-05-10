@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol StudentEditorServiceDelegate: AnyObject {
+public protocol StudentNameEditorServiceDelegate: AnyObject {
 	
 	func studentEditorServiceDidModify(student: Student)
 }

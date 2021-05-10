@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum StudentEditorNextOperation {
+public enum StudentNameEditorNextOperation {
 	case done
 	case keepEditing
 }

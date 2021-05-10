@@ -7,12 +7,12 @@
 
 import UIKit
 
-class StudentRouter: StudentEditorRouterProtocol {
+class StudentRouter: StudentNameEditorRouterProtocol {
 	
 	weak var viewController: UIViewController?
-	var completion: ((Int, StudentEditorNextOperation) -> Void)?
+	var completion: ((Int, StudentNameEditorNextOperation) -> Void)?
 	
-	func edit(studentAge: Int, completion: @escaping (Int, StudentEditorNextOperation) -> Void) {
+	func edit(studentAge: Int, completion: @escaping (Int, StudentNameEditorNextOperation) -> Void) {
 		
 		self.completion = completion
 		var (studentAgeEitorService, studenAgeEditorViewController) = StudentAgeEditorViewControllerFactory().build()

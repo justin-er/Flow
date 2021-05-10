@@ -7,20 +7,20 @@
 
 import Foundation
 
-class StudentEditor: StudentEditorProtocol {
+class StudentNameEditor: StudentNameEditorProtocol {
 	
 	var editingStudent: Student?
-	var interactorDelegate: StudentEditorInteracgtorDelegate?
-	weak var serviceDelegate: StudentEditorServiceDelegate?
+	var interactorDelegate: StudentNameEditorInteracgtorDelegate?
+	weak var serviceDelegate: StudentNameEditorServiceDelegate?
 	
-	let router: StudentEditorRouterProtocol
+	let router: StudentNameEditorRouterProtocol
 	
-	init(router: StudentEditorRouterProtocol) {
+	init(router: StudentNameEditorRouterProtocol) {
 		self.router = router
 	}
 }
 
-extension StudentEditor: StudentEditorInteractorProtocol {
+extension StudentNameEditor: StudentNameEditorInteractorProtocol {
 	
 	func loadStudent() {
 		interactorDelegate?.studentEditorInteractorDidLoad(student: self.editingStudent)
@@ -47,7 +47,7 @@ extension StudentEditor: StudentEditorInteractorProtocol {
 	}
 }
 
-extension StudentEditor: StudentEditorServiceProtocol {
+extension StudentNameEditor: StudentNameEditorServiceProtocol {
 	
 	func edit(student: Student) {
 		self.editingStudent = student

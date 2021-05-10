@@ -22,7 +22,7 @@ class MainRouter: MainRouterProtocol {
 	}
 }
 
-extension MainRouter: StudentEditorServiceDelegate {
+extension MainRouter: StudentNameEditorServiceDelegate {
 	
 	func studentEditorServiceDidModify(student: Student) {
 		

@@ -7,9 +7,9 @@
 
 import Foundation
 
-public protocol StudentEditorServiceProtocol {
+public protocol StudentNameEditorServiceProtocol {
 	
-	var serviceDelegate: StudentEditorServiceDelegate? { get set }
+	var serviceDelegate: StudentNameEditorServiceDelegate? { get set }
 	
 	func edit(student: Student)
 }

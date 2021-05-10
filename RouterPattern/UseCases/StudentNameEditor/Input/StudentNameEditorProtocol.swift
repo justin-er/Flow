@@ -7,6 +7,6 @@
 
 import Foundation
 
-public protocol StudentEditorProtocol: StudentEditorInteractorProtocol, StudentEditorServiceProtocol {
+public protocol StudentNameEditorProtocol: StudentNameEditorInteractorProtocol, StudentNameEditorServiceProtocol {
 	
 }
