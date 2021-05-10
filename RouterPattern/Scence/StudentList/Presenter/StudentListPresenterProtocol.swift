@@ -7,9 +7,9 @@
 
 import Foundation
 
-protocol MainPresenterProtocol {
+protocol StudentListPresenterProtocol {
 	
-	var delegate: MainPresenterDelegate? { get set }
+	var delegate: StudentListPresenterDelegate? { get set }
 	
 	func loadStudents()
 	func numberOfRowsIn(section: Int) -> Int

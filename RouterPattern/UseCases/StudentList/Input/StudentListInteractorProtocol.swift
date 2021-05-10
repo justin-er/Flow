@@ -7,9 +7,9 @@
 
 import Foundation
 
-public protocol MainInteractorProtocol {
+public protocol StudentListInteractorProtocol {
 	
-	var delegate: MainInteractorDelegate? { get set }
+	var delegate: StudentListInteractorDelegate? { get set }
 	
 	func load()
 	func editStudent(id: Int)

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol MainRouterProtocol {
+public protocol StudentListRouterProtocol {
 	
 	func edit(student: Student, completion: @escaping (Student) -> Void)
 }

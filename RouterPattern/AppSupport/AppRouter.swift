@@ -15,7 +15,7 @@ class AppRouter {
 	}
 	
 	func start() {
-		let rootViewController = MainViewControllerFactory().build()
+		let rootViewController = StudentListViewControllerFactory().build()
 		let rootNavigationController = UINavigationController(rootViewController: rootViewController)
 		window?.rootViewController = rootNavigationController
 		window?.makeKeyAndVisible()

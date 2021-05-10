@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol MainPresenterDelegate: AnyObject {
+protocol StudentListPresenterDelegate: AnyObject {
 	
 	func mainPresenterDidLoad()
 	func mainPresenterDidUpdate(at indexPath: IndexPath)

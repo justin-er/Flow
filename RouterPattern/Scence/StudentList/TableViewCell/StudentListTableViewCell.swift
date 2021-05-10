@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StudentTableViewCell: UITableViewCell {
+class StudentListTableViewCell: UITableViewCell {
 	
 	var model: StudentViewModel?
 		

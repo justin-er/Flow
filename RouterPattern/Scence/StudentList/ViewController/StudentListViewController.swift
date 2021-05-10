@@ -7,16 +7,16 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class StudentListViewController: UIViewController {
 	
 	let cellReuseIdentifier = "CellReuseIdentifier"
 	
-	var presenter: MainPresenterProtocol
+	var presenter: StudentListPresenterProtocol
 	let tableView = UITableView()
 		
 	var updatedIndexPaths = [IndexPath]()
 	
-	init(presenter: MainPresenterProtocol) {
+	init(presenter: StudentListPresenterProtocol) {
 		self.presenter = presenter
 		super.init(nibName: nil, bundle: nil)
 	}
@@ -54,7 +54,7 @@ class MainViewController: UIViewController {
 		
 		view.addSubview(tableView)
 		tableView.translatesAutoresizingMaskIntoConstraints = false
-		tableView.register(StudentTableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+		tableView.register(StudentListTableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
 		tableView.dataSource = self
 		tableView.delegate = self
 		NSLayoutConstraint.activate([
@@ -66,7 +66,7 @@ class MainViewController: UIViewController {
 	}
 }
 
-extension MainViewController: MainPresenterDelegate {
+extension StudentListViewController: StudentListPresenterDelegate {
 	
 	func mainPresenterDidLoad() {
 		tableView.reloadData()
@@ -77,16 +77,16 @@ extension MainViewController: MainPresenterDelegate {
 	}
 }
 
-extension MainViewController: UITableViewDelegate {
+extension StudentListViewController: UITableViewDelegate {
 
 	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-		guard let cell = tableView.cellForRow(at: indexPath) as? StudentTableViewCell else { return }
+		guard let cell = tableView.cellForRow(at: indexPath) as? StudentListTableViewCell else { return }
 		guard let studentViewModel = cell.model else { return }
 		presenter.edit(student: studentViewModel.id)
 	}
 }
 
-extension MainViewController: UITableViewDataSource {
+extension StudentListViewController: UITableViewDataSource {
 		
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		presenter.numberOfRowsIn(section: section)
@@ -97,7 +97,7 @@ extension MainViewController: UITableViewDataSource {
 			return UITableViewCell()
 		}
 		
-		guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? StudentTableViewCell else {
+		guard let cell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as? StudentListTableViewCell else {
 			return UITableViewCell()
 		}
 		

@@ -7,13 +7,13 @@
 
 import Foundation
 
-class MainPresenter: MainPresenterProtocol {
+class StudentListPresenter: StudentListPresenterProtocol {
 	
 	var dataSource = [StudentViewModel]()
-	weak var delegate: MainPresenterDelegate?
-	let interactor: MainInteractorProtocol
+	weak var delegate: StudentListPresenterDelegate?
+	let interactor: StudentListInteractorProtocol
 	
-	init(interactor: MainInteractorProtocol) {
+	init(interactor: StudentListInteractorProtocol) {
 		self.interactor = interactor
 	}
 	
@@ -35,7 +35,7 @@ class MainPresenter: MainPresenterProtocol {
 	}
 }
 
-extension MainPresenter: MainInteractorDelegate {
+extension StudentListPresenter: StudentListInteractorDelegate {
 	
 	func mainInteractorDidLoad(students: [Student]) {
 		
