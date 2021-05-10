@@ -14,7 +14,7 @@ class MainRouter: MainRouterProtocol {
 	
 	func edit(student: Student, completion: @escaping (Student) -> Void) {
 		self.completion = completion
-		var (studentEditor, studentViewController) = StudentEditorViewControllerFactory.build()
+		var (studentEditor, studentViewController) = StudentNameEditorViewControllerFactory.build()
 		studentEditor.serviceDelegate = self
 		studentEditor.edit(student: student)
 		viewController?.show(studentViewController, sender: self)

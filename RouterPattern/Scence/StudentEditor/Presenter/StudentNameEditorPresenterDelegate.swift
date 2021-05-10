@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol StudentEditorPresenterDelegate: AnyObject {
+protocol StudentNameEditorPresenterDelegate: AnyObject {
 	
 	func getEditedstudent() -> StudentViewModel?
 	func studentEditorPresenterDidLoad(student: StudentViewModel)

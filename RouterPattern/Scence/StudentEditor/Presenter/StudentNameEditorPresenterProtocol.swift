@@ -7,9 +7,9 @@
 
 import Foundation
 
-protocol StudentEditorPresenterProtocol {
+protocol StudentNameEditorPresenterProtocol {
 	
-	var delegate: StudentEditorPresenterDelegate? { get set }
+	var delegate: StudentNameEditorPresenterDelegate? { get set }
 	
 	func loadStudent()
 	func applyChanges(student: StudentViewModel)

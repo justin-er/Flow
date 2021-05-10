@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StudentRouter: StudentNameEditorRouterProtocol {
+class StudentNameEditorRouter: StudentNameEditorRouterProtocol {
 	
 	weak var viewController: UIViewController?
 	var completion: ((Int, StudentNameEditorNextOperation) -> Void)?
@@ -22,7 +22,7 @@ class StudentRouter: StudentNameEditorRouterProtocol {
 	}
 }
 
-extension StudentRouter: StudentAgeEditorServiceDelegate {
+extension StudentNameEditorRouter: StudentAgeEditorServiceDelegate {
 	
 	func studentAgeEditorServiceDidModify(studentAge: Int, nextOperation: StudentAgeEditorNextOperation) {
 		switch nextOperation {

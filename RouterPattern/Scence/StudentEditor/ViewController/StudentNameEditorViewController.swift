@@ -7,9 +7,9 @@
 
 import UIKit
 
-class StudentEditorViewController: UIViewController {
+class StudentNameEditorViewController: UIViewController {
 
-	let presenter: StudentEditorPresenterProtocol
+	let presenter: StudentNameEditorPresenterProtocol
 	
 	var student: StudentViewModel?
 	
@@ -17,7 +17,7 @@ class StudentEditorViewController: UIViewController {
 	@IBOutlet weak var textField: UITextField!
 	@IBOutlet weak var ageTextField: UILabel!
 	
-	init(presenter: StudentEditorPresenterProtocol) {
+	init(presenter: StudentNameEditorPresenterProtocol) {
 		self.presenter = presenter
 		super.init(nibName: nil, bundle: nil)
 	}
@@ -62,7 +62,7 @@ class StudentEditorViewController: UIViewController {
 	}
 }
 
-extension StudentEditorViewController: StudentEditorPresenterDelegate {
+extension StudentNameEditorViewController: StudentNameEditorPresenterDelegate {
 	
 	func getEditedstudent() -> StudentViewModel? {
 		student

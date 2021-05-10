@@ -7,9 +7,9 @@
 
 import Foundation
 
-class StudentEditorPresenter: StudentEditorPresenterProtocol {
+class StudentNameEditorPresenter: StudentNameEditorPresenterProtocol {
 	
-	weak var delegate: StudentEditorPresenterDelegate?
+	weak var delegate: StudentNameEditorPresenterDelegate?
 	let interactor: StudentNameEditorInteractorProtocol
 	
 	init(interactor: StudentNameEditorInteractorProtocol) {
@@ -30,7 +30,7 @@ class StudentEditorPresenter: StudentEditorPresenterProtocol {
 	}
 }
 
-extension StudentEditorPresenter: StudentNameEditorInteracgtorDelegate {
+extension StudentNameEditorPresenter: StudentNameEditorInteracgtorDelegate {
 		
 	func getEditedstudent() -> Student? {
 		guard let studentVidwModel = delegate?.getEditedstudent() else { return nil }

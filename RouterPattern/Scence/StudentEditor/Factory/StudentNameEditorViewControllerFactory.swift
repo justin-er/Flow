@@ -7,13 +7,13 @@
 
 import UIKit
 
-class StudentEditorViewControllerFactory {
+class StudentNameEditorViewControllerFactory {
 	
-	static func build() -> (StudentNameEditorServiceProtocol, StudentEditorViewController) {
-		let router = StudentRouter()
+	static func build() -> (StudentNameEditorServiceProtocol, StudentNameEditorViewController) {
+		let router = StudentNameEditorRouter()
 		var interactor = StudentNameEditorFactory.build(router: router)
-		let presenter = StudentEditorPresenter(interactor: interactor)
-		let viewController = StudentEditorViewController(presenter: presenter)
+		let presenter = StudentNameEditorPresenter(interactor: interactor)
+		let viewController = StudentNameEditorViewController(presenter: presenter)
 		
 		router.viewController = viewController
 		interactor.interactorDelegate = presenter
