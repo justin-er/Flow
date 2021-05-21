@@ -10,8 +10,8 @@ import Foundation
 class StudentListViewControllerFactory {
 	
 	func build() -> StudentListViewController {
-		let coordinator = StudentListRouter()
-		var interactor = StudentListInteractorFactory.build(coordinator: coordinator)
+		let coordinator = StudentListToNameEditorFlow()
+		var interactor = StudentListFactory.build(coordinator: coordinator)
 		var presenter = StudentListPresenter(interactor: interactor)
 		
 		let viewController = StudentListViewController(presenter: presenter)

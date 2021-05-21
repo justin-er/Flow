@@ -7,14 +7,14 @@
 
 import Foundation
 
-class StudentListInteractor: StudentListInteractorProtocol {
+class StudentList: StudentListInteractorProtocol {
 	
 	var dataSource = [Student]()
 	
-	let router: StudentListRouterProtocol
+	let router: StudentNameEditorService
 	weak var delegate: StudentListInteractorDelegate?
 	
-	init(coordinator: StudentListRouterProtocol) {
+	init(coordinator: StudentNameEditorService) {
 		self.router = coordinator
 		
 		dataSource = [

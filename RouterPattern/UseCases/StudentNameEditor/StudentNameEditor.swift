@@ -13,9 +13,9 @@ class StudentNameEditor: StudentNameEditorProtocol {
 	var interactorDelegate: StudentNameEditorInteracgtorDelegate?
 	weak var serviceDelegate: StudentNameEditorServiceDelegate?
 	
-	let router: StudentNameEditorRouterProtocol
+	let router: StudentAgeEditorService
 	
-	init(router: StudentNameEditorRouterProtocol) {
+	init(router: StudentAgeEditorService) {
 		self.router = router
 	}
 }

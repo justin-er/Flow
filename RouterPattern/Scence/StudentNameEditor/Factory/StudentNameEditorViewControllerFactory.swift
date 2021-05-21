@@ -10,7 +10,7 @@ import UIKit
 class StudentNameEditorViewControllerFactory {
 	
 	static func build() -> (StudentNameEditorServiceProtocol, StudentNameEditorViewController) {
-		let router = StudentNameEditorRouter()
+		let router = StudentNameToAgeEditorFlow()
 		var interactor = StudentNameEditorFactory.build(router: router)
 		let presenter = StudentNameEditorPresenter(interactor: interactor)
 		let viewController = StudentNameEditorViewController(presenter: presenter)

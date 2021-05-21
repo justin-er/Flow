@@ -9,7 +9,7 @@ import Foundation
 
 public class StudentNameEditorFactory {
 	
-	public static func build(router: StudentNameEditorRouterProtocol) -> StudentNameEditorProtocol {
+	public static func build(router: StudentAgeEditorService) -> StudentNameEditorProtocol {
 		StudentNameEditor(router: router)
 	}
 	

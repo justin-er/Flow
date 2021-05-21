@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StudentListRouter: StudentListRouterProtocol {
+class StudentListToNameEditorFlow: StudentNameEditorService {
 
 	weak var viewController: UIViewController?
 	var completion: ((Student) -> Void)?
@@ -22,7 +22,7 @@ class StudentListRouter: StudentListRouterProtocol {
 	}
 }
 
-extension StudentListRouter: StudentNameEditorServiceDelegate {
+extension StudentListToNameEditorFlow: StudentNameEditorServiceDelegate {
 	
 	func studentEditorServiceDidModify(student: Student) {
 		

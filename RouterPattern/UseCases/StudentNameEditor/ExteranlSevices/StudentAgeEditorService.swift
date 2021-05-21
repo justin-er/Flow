@@ -7,7 +7,7 @@
 
 import Foundation
 
-public protocol StudentNameEditorRouterProtocol {
+public protocol StudentAgeEditorService {
 	
 	func edit(studentAge: Int, completion: @escaping (Int, StudentNameEditorNextOperation) -> Void)
 }
