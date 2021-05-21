@@ -98,13 +98,13 @@
 		E1B2A59E2645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorPresetnerProtocol.swift; sourceTree = "<group>"; };
 		E1B2A59F2645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorPresetnerDelegate.swift; sourceTree = "<group>"; };
 		E1B2A5A02645AC8400919788 /* StudentAgeEditorPresetner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorPresetner.swift; sourceTree = "<group>"; };
-		E1C504B0261B56A700087D61 /* RouterPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RouterPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C504B0261B56A700087D61 /* Flow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1C504B3261B56A700087D61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1C504B5261B56A700087D61 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E1C504B7261B56A700087D61 /* StudentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewController.swift; sourceTree = "<group>"; };
 		E1C504BC261B56AB00087D61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C504BF261B56AB00087D61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E1C504C1261B56AB00087D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RouterPattern/AppSupport/Info.plist; sourceTree = SOURCE_ROOT; };
+		E1C504C1261B56AB00087D61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Flow/AppSupport/Info.plist; sourceTree = SOURCE_ROOT; };
 		E1D25F9B261EEB5100CE8FC8 /* StudentList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentList.swift; sourceTree = "<group>"; };
 		E1D25FA3261EEBD000CE8FC8 /* StudentNameEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditor.swift; sourceTree = "<group>"; };
 		E1D25FA9261EECD000CE8FC8 /* StudentAgeEditorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorService.swift; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 		E1C504A7261B56A700087D61 = {
 			isa = PBXGroup;
 			children = (
-				E1C504B2261B56A700087D61 /* RouterPattern */,
+				E1C504B2261B56A700087D61 /* Flow */,
 				E1C504B1261B56A700087D61 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -321,12 +321,12 @@
 		E1C504B1261B56A700087D61 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1C504B0261B56A700087D61 /* RouterPattern.app */,
+				E1C504B0261B56A700087D61 /* Flow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E1C504B2261B56A700087D61 /* RouterPattern */ = {
+		E1C504B2261B56A700087D61 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
 				E1D26077261EF5B200CE8FC8 /* AppSupport */,
@@ -334,7 +334,7 @@
 				E1AF89C2261EE9720030B37F /* UseCases */,
 				E1D2607E261EF65500CE8FC8 /* Scence */,
 			);
-			path = RouterPattern;
+			path = Flow;
 			sourceTree = "<group>";
 		};
 		E1D25FA8261EEC0100CE8FC8 /* ExteranlSevices */ = {
@@ -489,9 +489,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1C504AF261B56A700087D61 /* RouterPattern */ = {
+		E1C504AF261B56A700087D61 /* Flow */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1C504DA261B56AB00087D61 /* Build configuration list for PBXNativeTarget "RouterPattern" */;
+			buildConfigurationList = E1C504DA261B56AB00087D61 /* Build configuration list for PBXNativeTarget "Flow" */;
 			buildPhases = (
 				E1C504AC261B56A700087D61 /* Sources */,
 				E1C504AD261B56A700087D61 /* Frameworks */,
@@ -502,9 +502,9 @@
 			);
 			dependencies = (
 			);
-			name = RouterPattern;
+			name = Flow;
 			productName = CoordinatorPattern;
-			productReference = E1C504B0261B56A700087D61 /* RouterPattern.app */;
+			productReference = E1C504B0261B56A700087D61 /* Flow.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -521,7 +521,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E1C504AB261B56A700087D61 /* Build configuration list for PBXProject "RouterPattern" */;
+			buildConfigurationList = E1C504AB261B56A700087D61 /* Build configuration list for PBXProject "Flow" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -534,7 +534,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1C504AF261B56A700087D61 /* RouterPattern */,
+				E1C504AF261B56A700087D61 /* Flow */,
 			);
 		};
 /* End PBXProject section */
@@ -743,7 +743,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7T2CRG623;
-				INFOPLIST_FILE = RouterPattern/AppSupport/Info.plist;
+				INFOPLIST_FILE = Flow/AppSupport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -763,7 +763,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7T2CRG623;
-				INFOPLIST_FILE = RouterPattern/AppSupport/Info.plist;
+				INFOPLIST_FILE = Flow/AppSupport/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -778,7 +778,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E1C504AB261B56A700087D61 /* Build configuration list for PBXProject "RouterPattern" */ = {
+		E1C504AB261B56A700087D61 /* Build configuration list for PBXProject "Flow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1C504D8261B56AB00087D61 /* Debug */,
@@ -787,7 +787,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1C504DA261B56AB00087D61 /* Build configuration list for PBXNativeTarget "RouterPattern" */ = {
+		E1C504DA261B56AB00087D61 /* Build configuration list for PBXNativeTarget "Flow" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1C504DB261B56AB00087D61 /* Debug */,

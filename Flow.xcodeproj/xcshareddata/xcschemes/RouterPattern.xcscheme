@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E1C504AF261B56A700087D61"
-               BuildableName = "RouterPattern.app"
-               BlueprintName = "RouterPattern"
-               ReferencedContainer = "container:RouterPattern.xcodeproj">
+               BuildableName = "Flow.app"
+               BlueprintName = "Flow"
+               ReferencedContainer = "container:Flow.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "E1D25FC3261EF16C00CE8FC8"
                BuildableName = "MainTests.xctest"
                BlueprintName = "MainTests"
-               ReferencedContainer = "container:RouterPattern.xcodeproj">
+               ReferencedContainer = "container:Flow.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "E1D25FF2261EF1E300CE8FC8"
                BuildableName = "OrderTests.xctest"
                BlueprintName = "OrderTests"
-               ReferencedContainer = "container:RouterPattern.xcodeproj">
+               ReferencedContainer = "container:Flow.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1C504AF261B56A700087D61"
-            BuildableName = "RouterPattern.app"
-            BlueprintName = "RouterPattern"
-            ReferencedContainer = "container:RouterPattern.xcodeproj">
+            BuildableName = "Flow.app"
+            BlueprintName = "Flow"
+            ReferencedContainer = "container:Flow.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E1C504AF261B56A700087D61"
-            BuildableName = "RouterPattern.app"
-            BlueprintName = "RouterPattern"
-            ReferencedContainer = "container:RouterPattern.xcodeproj">
+            BuildableName = "Flow.app"
+            BlueprintName = "Flow"
+            ReferencedContainer = "container:Flow.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

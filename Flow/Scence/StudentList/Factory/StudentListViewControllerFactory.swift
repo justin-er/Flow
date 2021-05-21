@@ -12,7 +12,7 @@ class StudentListViewControllerFactory {
 	func build() -> StudentListViewController {
 		let coordinator = StudentListToNameEditorFlow()
 		var interactor = StudentListFactory.build(coordinator: coordinator)
-		var presenter = StudentListPresenter(interactor: interactor)
+		let presenter = StudentListPresenter(interactor: interactor)
 		
 		let viewController = StudentListViewController(presenter: presenter)
 		
