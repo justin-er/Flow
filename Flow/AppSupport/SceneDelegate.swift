@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		guard let winScene = (scene as? UIWindowScene) else { return }
 		window = UIWindow(windowScene: winScene)
 		
-		let appCoordinator = AppRouter(window: window)
+		let appCoordinator = SceneFlow(window: window)
 		appCoordinator.start()
 	}
 

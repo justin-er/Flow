@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppRouter {
+class SceneFlow {
 	let window: UIWindow?
 	
 	init(window: UIWindow?) {

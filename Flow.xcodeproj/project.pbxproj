@@ -37,7 +37,7 @@
 		E1826CE42645667B00A808AB /* StudentAgeEditorServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826CE32645667B00A808AB /* StudentAgeEditorServiceProtocol.swift */; };
 		E1826CE72645669900A808AB /* StudentAgeEditorInteractorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826CE62645669900A808AB /* StudentAgeEditorInteractorDelegate.swift */; };
 		E1826CE9264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1826CE8264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift */; };
-		E18B3A1C261E2AF30099AE65 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B3A1B261E2AF30099AE65 /* AppRouter.swift */; };
+		E18B3A1C261E2AF30099AE65 /* SceneFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18B3A1B261E2AF30099AE65 /* SceneFlow.swift */; };
 		E1AF89D4261EE9E70030B37F /* StudentListToNameEditorFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1AF89D3261EE9E70030B37F /* StudentListToNameEditorFlow.swift */; };
 		E1B2A5A12645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A59E2645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift */; };
 		E1B2A5A22645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B2A59F2645AC8400919788 /* StudentAgeEditorPresetnerDelegate.swift */; };
@@ -92,7 +92,7 @@
 		E1826CE32645667B00A808AB /* StudentAgeEditorServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorServiceProtocol.swift; sourceTree = "<group>"; };
 		E1826CE62645669900A808AB /* StudentAgeEditorInteractorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorInteractorDelegate.swift; sourceTree = "<group>"; };
 		E1826CE8264566AB00A808AB /* StudentAgeEditorServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorServiceDelegate.swift; sourceTree = "<group>"; };
-		E18B3A1B261E2AF30099AE65 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		E18B3A1B261E2AF30099AE65 /* SceneFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneFlow.swift; sourceTree = "<group>"; };
 		E1AF89CD261EE9C10030B37F /* StudentNameEditorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentNameEditorService.swift; sourceTree = "<group>"; };
 		E1AF89D3261EE9E70030B37F /* StudentListToNameEditorFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListToNameEditorFlow.swift; sourceTree = "<group>"; };
 		E1B2A59E2645AC8400919788 /* StudentAgeEditorPresetnerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentAgeEditorPresetnerProtocol.swift; sourceTree = "<group>"; };
@@ -353,7 +353,7 @@
 				E1C504B5261B56A700087D61 /* SceneDelegate.swift */,
 				E1C504BC261B56AB00087D61 /* Assets.xcassets */,
 				E1C504BE261B56AB00087D61 /* LaunchScreen.storyboard */,
-				E18B3A1B261E2AF30099AE65 /* AppRouter.swift */,
+				E18B3A1B261E2AF30099AE65 /* SceneFlow.swift */,
 			);
 			path = AppSupport;
 			sourceTree = "<group>";
@@ -575,7 +575,7 @@
 				E170BD782642FC9600AA2A43 /* StudentListPresenterDelegate.swift in Sources */,
 				E1D260C3261F0E9C00CE8FC8 /* StudentNameEditorViewControllerFactory.swift in Sources */,
 				E1826CE02645660700A808AB /* StudentAgeEditor.swift in Sources */,
-				E18B3A1C261E2AF30099AE65 /* AppRouter.swift in Sources */,
+				E18B3A1C261E2AF30099AE65 /* SceneFlow.swift in Sources */,
 				E1D94F1126456A6B00ED63B2 /* StudentAgeEditorProtocol.swift in Sources */,
 				E162DBF9264428DD0080EC78 /* StudentListInteractorDelegate.swift in Sources */,
 				E162DC02264429A50080EC78 /* StudentNameEditorProtocol.swift in Sources */,
