@@ -12,7 +12,7 @@ class StudentListViewController: UIViewController {
 	let cellReuseIdentifier = "CellReuseIdentifier"
 	
 	var presenter: StudentListPresenterProtocol
-	let tableView = UITableView()
+	let tableView = UITableView(frame: CGRect.zero, style: .insetGrouped )
 		
 	var updatedIndexPaths = [IndexPath]()
 	

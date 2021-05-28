@@ -15,7 +15,6 @@ class StudentNameEditorViewController: UIViewController {
 	
 	@IBOutlet weak var receivedLabel: UILabel!
 	@IBOutlet weak var textField: UITextField!
-	@IBOutlet weak var ageTextField: UILabel!
 	
 	init(presenter: StudentNameEditorPresenterProtocol) {
 		self.presenter = presenter
@@ -71,6 +70,5 @@ extension StudentNameEditorViewController: StudentNameEditorPresenterDelegate {
 	func studentEditorPresenterDidLoad(student: StudentViewModel) {
 		self.student = student
 		textField.text = student.name
-		ageTextField.text = "Student Age \(student.age)"
 	}
 }

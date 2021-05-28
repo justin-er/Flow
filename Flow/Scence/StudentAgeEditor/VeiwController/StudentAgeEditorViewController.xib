@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -7,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StudentAgeEditorViewController" customModule="RouterPattern" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StudentAgeEditorViewController" customModule="Flow" customModuleProvider="target">
             <connections>
                 <outlet property="studentAgeTextField" destination="PR2-yr-Ty3" id="tnW-se-58X"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -18,30 +19,26 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Student Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooF-n0-Shu">
-                    <rect key="frame" x="20" y="152" width="95" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Student Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooF-n0-Shu">
+                    <rect key="frame" x="16" y="145" width="382" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PR2-yr-Ty3">
-                    <rect key="frame" x="20" y="181" width="123" height="34"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PR2-yr-Ty3">
+                    <rect key="frame" x="16" y="174" width="382" height="34"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsy-8t-FFF">
-                    <rect key="frame" x="138" y="290" width="139" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsy-8t-FFF">
+                    <rect key="frame" x="137.5" y="283" width="139" height="30"/>
                     <state key="normal" title="Back to Student List"/>
                     <connections>
                         <action selector="backToStudentListDidTap:" destination="-1" eventType="touchUpInside" id="Yod-i3-R39"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRE-j6-iIb">
-                    <rect key="frame" x="189" y="346" width="37" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRE-j6-iIb">
+                    <rect key="frame" x="188.5" y="339" width="37" height="30"/>
                     <state key="normal" title="Done"/>
                     <connections>
                         <action selector="doneDidTap:" destination="-1" eventType="touchUpInside" id="2ms-zR-fqu"/>
@@ -50,6 +47,18 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ooF-n0-Shu" secondAttribute="trailing" constant="16" id="53J-z7-X97"/>
+                <constraint firstItem="tRE-j6-iIb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CX1-Vg-0Pq"/>
+                <constraint firstItem="ooF-n0-Shu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="101" id="Nup-Ok-7f8"/>
+                <constraint firstItem="gsy-8t-FFF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QOg-xF-689"/>
+                <constraint firstItem="PR2-yr-Ty3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="SLp-Ow-2Lw"/>
+                <constraint firstItem="PR2-yr-Ty3" firstAttribute="top" secondItem="ooF-n0-Shu" secondAttribute="bottom" constant="8" symbolic="YES" id="YNc-Ui-S1U"/>
+                <constraint firstItem="tRE-j6-iIb" firstAttribute="top" secondItem="gsy-8t-FFF" secondAttribute="bottom" constant="26" id="aqM-Dz-FTA"/>
+                <constraint firstItem="ooF-n0-Shu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="u5c-Fw-MGn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PR2-yr-Ty3" secondAttribute="trailing" constant="16" id="uKI-LJ-f2D"/>
+                <constraint firstItem="gsy-8t-FFF" firstAttribute="top" secondItem="PR2-yr-Ty3" secondAttribute="bottom" constant="75" id="whe-Tn-Vph"/>
+            </constraints>
             <point key="canvasLocation" x="47.826086956521742" y="99.776785714285708"/>
         </view>
     </objects>
